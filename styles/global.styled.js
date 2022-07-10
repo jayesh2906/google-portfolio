@@ -10,14 +10,11 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
   }
   body {
-    font-family: ${(props) => props.theme.fonts.main};
+    font-family: ${({ theme }) => theme.fontFamily};
     font-size: 1.6rem;
-    background: ${(props) => props.theme.colors.background1};
-    color: ${(props) => props.theme.colors.primary};
+    background: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.primary};
     cursor: default;
-  }
-  h1,h2,h3,h4,h5,h6,button {
-    font-family: ${(props) => props.theme.fonts.title};
   }
   a {
     text-decoration: none;

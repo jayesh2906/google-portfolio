@@ -1,17 +1,18 @@
-import Head from "next/head";
-import { StyledButton } from "../styles/home.styled";
+import TitleDesc from "../components/TitleDesc";
+import { StyledButton } from "../styles/Home.styled";
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Home</title>
-        <meta name="description" content="This is Jayesh's Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <TitleDesc
+        title="Jayesh's Portfolio"
+        desc="This is Google theme portfolio created by Jayesh choudhary using Nextjs Framework."
+      />
       <main>
         <h1>Welcome Jayesh</h1>
+        TypeScript is a strongly typed programming language that builds on
+        JavaScript, giving you better tooling at any scale. Try TypeScript Now.
+        Online or via npm.
         <StyledButton>button</StyledButton>
       </main>
     </div>
