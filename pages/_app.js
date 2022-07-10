@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import React from "react";
+import Theme from "../styles/theme";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }) {
+  return (
+    <React.Fragment>
+      <Theme>
+        <Component {...pageProps} />
+      </Theme>
+    </React.Fragment>
+  );
 }
-
-export default MyApp
