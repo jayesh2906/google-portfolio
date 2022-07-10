@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
   return (
     <React.Fragment>
       <Theme darkMode={darkMode}>
-        <button onClick={handleThemeMode}>logo</button>
+        <button onClick={handleThemeMode}>light/dark</button>
         <Layout>
           <Component {...pageProps} />
         </Layout>
