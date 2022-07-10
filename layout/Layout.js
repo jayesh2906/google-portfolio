@@ -1,11 +1,11 @@
 import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
+import Header from "../components/header";
 import { Container } from "./Layout.styled";
 
-export const Layout = ({ children }) => {
+export const Layout = ({ handleThemeMode, children }) => {
   return (
     <Container>
-      <Header />
+      <Header handleThemeMode={handleThemeMode} />
       <main>{children}</main>
       <Footer />
     </Container>
