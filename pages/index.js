@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1>Welcome Jayesh</h1>
-        <StyledButton>button bro..</StyledButton>
+        <StyledButton>button</StyledButton>
       </main>
     </div>
   );
