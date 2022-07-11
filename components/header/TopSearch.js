@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../pages/_app";
 import DarkModeToggle from "react-dark-mode-toggle";
@@ -17,13 +16,14 @@ const TopSearch = ({}) => {
   const { darkMode, handleThemeMode } = useContext(ThemeContext);
   const [search, setSearch] = useState("Jayesh Choudhary");
   const [showDetails, setShowDetails] = useState(false);
+
   return (
     <TopSearchContainer>
       <Logo>
         {!darkMode ? (
-          <Image src="/LogoDark.png" alt="Logo" width={92} height={30} />
+          <img src="/LogoDark.png" alt="Logo" width={92} height={30} />
         ) : (
-          <Image src="/LogoLight.png" alt="Logo" width={92} height={30} />
+          <img src="/LogoLight.png" alt="Logo" width={92} height={30} />
         )}
       </Logo>
       <SearchBox style={{ backgroundColor: darkMode ? "#303134" : "#FFFFFF" }}>

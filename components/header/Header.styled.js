@@ -76,6 +76,7 @@ export const Profile = styled.div`
   color: white;
   padding: 0.8rem 1.3rem;
   font-weight: 600;
+  margin-top: -2px;
   cursor: pointer;
 `;
 
