@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import { Layout } from "../layout/Layout";
 import Theme from "../styles/Theme";
+
+const ThemeContext = createContext();
 
 export default function App({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -11,11 +13,15 @@ export default function App({ Component, pageProps }) {
 
   return (
     <React.Fragment>
-      <Theme darkMode={darkMode}>
-        <Layout handleThemeMode={handleThemeMode}>
-          <Component {...pageProps} />
-        </Layout>
-      </Theme>
+      <ThemeContext.Provider value={{ darkMode, handleThemeMode }}>
+        <Theme darkMode={darkMode}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </Theme>
+      </ThemeContext.Provider>
     </React.Fragment>
   );
 }
+
+export { ThemeContext };

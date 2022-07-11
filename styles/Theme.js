@@ -5,6 +5,7 @@ const getTheme = (darkMode) => ({
   fontFamily: "arial,sans-serif",
   colors: {
     primary: darkMode ? "#BCC0C3" : "#4D5156",
+    secondary: darkMode ? "#79B4F8" : "#1A0DAB",
     background: darkMode ? "#202124" : "#FFFFFF",
   },
   breakpoints: {
