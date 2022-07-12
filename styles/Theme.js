@@ -9,7 +9,7 @@ const getTheme = (darkMode) => ({
     background: darkMode ? "#202124" : "#FFFFFF",
   },
   breakpoints: {
-    sm: "screen and (max-width: 540px)",
+    sm: "screen and (max-width: 550px)",
     md: "screen and (max-width: 768px)",
     lg: "screen and (max-width: 1280px)",
   },

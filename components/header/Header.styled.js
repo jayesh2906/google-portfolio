@@ -1,21 +1,27 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  min-height: 110px;
+  min-height: 100px;
   border-bottom: 1px solid #ebebeb;
 `;
 
 export const TopSearchContainer = styled.div`
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 96%;
   gap: 5rem;
   padding: 1.6rem 0;
   flex-wrap: wrap;
   align-items: center;
+  background-color: ${({ theme }) => theme.colors.background};
   @media ${(props) => props.theme.breakpoints.sm} {
     gap: 1rem;
     padding: 1.3rem 0;
+    width: 100%;
+    position: static;
   }
-  min-height: 60px;
+  height: 65px;
 `;
 
 export const Logo = styled.div`
@@ -76,7 +82,7 @@ export const Profile = styled.div`
   color: white;
   padding: 0.8rem 1.3rem;
   font-weight: 600;
-  margin-top: -2px;
+  margin-top: -3px;
   cursor: pointer;
 `;
 
@@ -94,4 +100,42 @@ export const AccountDetails = styled.div`
     color: #c0c0c0;
     padding-top: 0.4rem;
   }
+`;
+
+// Nav Bar Styling
+export const NavBarContainer = styled.div`
+  padding-top: 70px;
+  padding-left: calc(92px + 5rem + 2rem);
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding-left: 0px;
+    margin: auto;
+    width: 70%;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding-left: 0;
+    padding-top: 45px;
+    width: 100%;
+  }
+`;
+
+export const NavBarUl = styled.ul`
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    overflow-x: scroll;
+    width: 100%;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const LinkWrapper = styled.div`
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
 `;
