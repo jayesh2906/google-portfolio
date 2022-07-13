@@ -80,7 +80,7 @@ export const Profile = styled.div`
   border-radius: 50%;
   background-color: #512da8;
   color: white;
-  padding: 0.8rem 1.3rem;
+  padding: 0.8rem 1.2rem;
   font-weight: 600;
   margin-top: -3px;
   cursor: pointer;
@@ -137,5 +137,6 @@ export const LinkWrapper = styled.div`
   align-items: center;
   padding: 1rem;
   font-size: 1.4rem;
+  font-weight: 600;
   cursor: pointer;
 `;

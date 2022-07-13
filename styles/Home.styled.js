@@ -1,5 +1,84 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
-  background-color: red;
+export const HomeContainer = styled.main`
+  display: flex;
+  justify-content: space-between;
+  padding-left: calc(92px + 5rem + 2rem);
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding-left: 0px;
+  }
+`;
+
+export const InfoContainer = styled.section`
+  flex-basis: 50%;
+  padding: 2rem 0;
+  @media ${(props) => props.theme.breakpoints.md} {
+    flex-basis: 55%;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    flex-basis: 100%;
+  }
+`;
+
+export const Heading = styled.h2`
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: ${({ theme }) => theme.colors.secondary};
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const Text = styled.p``;
+
+export const WorkExperience = styled.div`
+  padding: 1.5rem 1.5rem;
+`;
+
+export const ProjectList = styled.ul`
+  li {
+    margin: 0.8rem 0;
+  }
+`;
+
+export const Company = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.2rem;
+`;
+
+export const MobileProfile = styled.div`
+  width: 100%;
+  margin: 1rem auto;
+  display: grid;
+  place-items: center;
+  display: none;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: block;
+    display: grid;
+  }
+`;
+
+export const AsideContainer = styled.aside`
+  flex-basis: 35%;
+  margin-right: 5rem;
+  margin-top: 2rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border: 2px solid #ebebeb;
+  overflow: hidden;
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-right: 0rem;
+    flex-basis: 40%;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
+  }
 `;

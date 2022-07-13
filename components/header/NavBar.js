@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { NavBarContainer, NavBarUl, LinkWrapper } from "./Header.styled";
 import NavLink from "next/link";
 import { AiOutlineSearch } from "react-icons/ai";
-import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import { BiPencil } from "react-icons/bi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import { MdOutlineLocationOn } from "react-icons/md";
@@ -31,7 +31,7 @@ const NavBar = () => {
         </NavLink>
         <NavLink href="/skills">
           <LinkWrapper style={router.pathname == "/skills" ? activeStyle : {}}>
-            <MdOutlineTipsAndUpdates size={20} />
+            <BiPencil size={20} />
             <li>Skills</li>
           </LinkWrapper>
         </NavLink>
