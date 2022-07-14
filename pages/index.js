@@ -14,10 +14,10 @@ import {
   HomeContainer,
   InfoContainer,
   MobileProfile,
+  MobileHeading,
 } from "../styles/Home.styled";
-import { ProfileContainer } from "../components/SideBar.styled";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
       <TitleDesc
@@ -27,6 +27,7 @@ export default function Home() {
       <HomeContainer>
         <InfoContainer>
           <Heading>Jayesh Choudhary: Software Engineer</Heading>
+          <MobileHeading>Jayesh Choudhary</MobileHeading>
           <Text>
             Experienced software engineer with a passion for developing
             innovative programs that expedite the efficiency and effectiveness
@@ -42,7 +43,7 @@ export default function Home() {
             />
           </MobileProfile>
           <WorkExperience>
-            <Heading>Work Experience</Heading>
+            <Heading style={{ display: "block" }}>Work Experience</Heading>
             <strong style={{ fontSize: "1.7rem" }}>Software Engineer</strong>
             <Company>
               <p>Mindtree Private Limited</p>

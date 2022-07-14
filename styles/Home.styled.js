@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HomeContainer = styled.main`
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding-left: calc(92px + 5rem + 2rem);
   @media ${(props) => props.theme.breakpoints.md} {
     padding-left: 0px;
@@ -25,12 +26,20 @@ export const Heading = styled.h2`
   font-weight: 400;
   margin-bottom: 5px;
   color: ${({ theme }) => theme.colors.secondary};
-  @media ${(props) => props.theme.breakpoints.md} {
-  }
+  display: block;
+  color: ${({ theme }) => theme.colors.secondary};
   @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
   }
   &:hover {
     text-decoration: underline;
+  }
+`;
+
+export const MobileHeading = styled(Heading)`
+  display: none;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: block;
   }
 `;
 
@@ -38,6 +47,9 @@ export const Text = styled.p``;
 
 export const WorkExperience = styled.div`
   padding: 1.5rem 1.5rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 1rem 0;
+  }
 `;
 
 export const ProjectList = styled.ul`
