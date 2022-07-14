@@ -16,7 +16,12 @@ const PeopleAlsoAsk = () => {
       </AskForWrapper>
       <div className="accordion">
         {accordionData.map(({ question, answer }, index) => (
-          <Accordion question={question} answer={answer} index={index} />
+          <Accordion
+            key={question}
+            question={question}
+            answer={answer}
+            index={index}
+          />
         ))}
       </div>
     </AccordionContainer>
