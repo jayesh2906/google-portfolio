@@ -48,7 +48,7 @@ export const Text = styled.p``;
 export const WorkExperience = styled.div`
   padding: 1.5rem 1.5rem;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 1rem 0;
+    padding: 1.3rem 0;
   }
 `;
 
