@@ -30,7 +30,7 @@ const Accordion = ({ question, answer, index }) => {
           {index === 0 && (
             <React.Fragment>
               <a>
-                <NavLink href="/skills">View more...</NavLink>
+                <NavLink href="/skills">View all skills...</NavLink>
               </a>
             </React.Fragment>
           )}
