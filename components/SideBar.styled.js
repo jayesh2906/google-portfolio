@@ -21,12 +21,10 @@ export const Item = styled.div`
   a {
     color: ${({ theme }) => theme.colors.secondary};
     cursor: pointer;
+    word-break: break-all;
   }
   a:hover {
     text-decoration: underline;
-  }
-  p {
-    word-break: break-all;
   }
 `;
 

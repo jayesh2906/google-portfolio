@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useContext } from "react";
 import { sideBarInfo } from "../constants/constants";
 import { ThemeContext } from "../pages/_app";
-import { AsideContainer } from "../styles/Home.styled";
+import { AsideContainer, ResumeWrapper } from "../styles/Home.styled";
 import {
   ContactDetails,
   Item,
@@ -25,6 +25,14 @@ const SideBar = () => {
         />
       </ProfileContainer>
       <About>{sideBarInfo.about}</About>
+      <ResumeWrapper
+        darkMode={darkMode}
+        href="/assets/Jayesh's Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Jayesh's Resume
+      </ResumeWrapper>
       <hr />
       <ContactDetails>
         {sideBarInfo.contactDetails.map(

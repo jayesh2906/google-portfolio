@@ -19,6 +19,12 @@ export const InfoContainer = styled.section`
   @media ${(props) => props.theme.breakpoints.sm} {
     flex-basis: 100%;
   }
+  & > span {
+    display: none;
+    @media ${(props) => props.theme.breakpoints.sm} {
+      display: block;
+    }
+  }
 `;
 
 export const Heading = styled.h2`
@@ -105,5 +111,35 @@ export const AsideContainer = styled.aside`
 
   hr {
     margin: 0 1rem;
+  }
+`;
+
+export const ResumeWrapper = styled.a`
+  padding: 1rem;
+  color: ${({ darkMode }) => (darkMode ? "#ddd" : "#202124")};
+  background: ${({ darkMode }) => (darkMode ? "#303134" : "#f1f3f4")};
+  border: 2px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border-radius: 2rem;
+  font-weight: 600;
+  display: block;
+  width: 50%;
+  margin: 0.8rem auto;
+  text-align: center;
+  &:hover {
+    background: ${({ darkMode }) => (darkMode ? "#3c4043" : "#d8d7dc")};
+  }
+  text-decoration: none;
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 56%;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    width: 70%;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 75%;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 54%;
   }
 `;

@@ -14,10 +14,15 @@ import {
   InfoContainer,
   MobileProfile,
   MobileHeading,
+  ResumeWrapper,
 } from "../styles/Home.styled";
 import { info } from "../constants/constants";
+import { useContext } from "react";
+import { ThemeContext } from "./_app";
 
 const Home = () => {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <div>
       <TitleDesc
@@ -38,6 +43,16 @@ const Home = () => {
               height={280}
             />
           </MobileProfile>
+          <span>
+            <ResumeWrapper
+              darkMode={darkMode}
+              href="/assets/Jayesh's Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jayesh's Resume
+            </ResumeWrapper>
+          </span>
           <WorkExperience>
             <Heading style={{ display: "block" }}>
               {info.workExperience}

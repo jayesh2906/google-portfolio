@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const RelatedSearchContainer = styled.main`
-  margin: 4.5rem 0;
+  margin-top: 4.5rem;
+  margin-bottom: 3.5rem;
 `;
 
 export const SearchWrapper = styled.main`

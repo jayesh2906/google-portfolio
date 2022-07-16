@@ -10,6 +10,9 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { BiLinkAlt } from "react-icons/bi";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 
 export const accountDetails = {
@@ -174,5 +177,34 @@ export const relatedsearch = [
   {
     text: "Jayesh's Location",
     href: "/map",
+  },
+];
+
+export const footerData = {
+  name: "JayeshChoudhary",
+  year: "2022",
+  darkTheme: "Dark theme: ",
+};
+
+export const socialLinks = [
+  {
+    href: "https://www.linkedin.com/in/jayesh-choudhary-72444518b/",
+    icon: FaLinkedin,
+  },
+  {
+    href: "https://jayesh2906.github.io",
+    icon: BiLinkAlt,
+  },
+  {
+    href: "https://github.com/jayesh2906",
+    icon: FaGithub,
+  },
+  {
+    href: "https://www.instagram.com/insta__jc/",
+    icon: FaInstagram,
+  },
+  {
+    href: "https://twitter.com/JayeshMERN",
+    icon: FaTwitterSquare,
   },
 ];
