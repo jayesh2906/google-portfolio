@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const AccordionContainer = styled.main``;
+export const AccordionContainer = styled.main`
+  margin: 1rem 0;
+`;
 
 export const Heading = styled.h2`
   font-weight: 400;
@@ -11,7 +13,7 @@ export const Heading = styled.h2`
 export const AskForWrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 `;
 
 export const AccordionItem = styled.div`

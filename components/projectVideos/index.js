@@ -1,33 +1,99 @@
-import React from "react";
+import { useContext } from "react";
+import {
+  Heading,
+  VideosHeadingWrapper,
+  VideosContainer,
+  ImageContainer,
+  Description,
+  VideoItem,
+  Title,
+  Text,
+  PlayIcon,
+  ViewAll,
+} from "./ProjectVideos.styled";
+import NavLink from "next/link";
+import { BiDotsVerticalRounded } from "react-icons/bi";
+import { BsArrowRightShort } from "react-icons/bs";
+import { RiVideoLine } from "react-icons/ri";
+import { BsFillPlayCircleFill } from "react-icons/bs";
+import { ThemeContext } from "../../pages/_app";
+import { projectVideos } from "../../constants/constants";
+import Image from "next/image";
 
 const ProjectVideos = () => {
-  return (
-    <div>
-      <iframe
-        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6904281486057373696"
-        height="780"
-        width="504"
-        frameBorder="0"
-        allowFullScreen=""
-        title="Embedded post"
-      ></iframe>
+  const { darkMode } = useContext(ThemeContext);
 
-      <iframe
-        width="100%"
-        height="100%"
-        src="http://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6904281486057373696"
-        title="YouTube video player"
-        frameBorder="0"
-        loading="lazy"
-        fetchpriority="high"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen="allowfullscreen"
-        mozallowfullscreen="mozallowfullscreen"
-        msallowfullscreen="msallowfullscreen"
-        oallowfullscreen="oallowfullscreen"
-        webkitallowfullscreen="webkitallowfullscreen"
-      ></iframe>
-    </div>
+  return (
+    <VideosContainer>
+      <VideosHeadingWrapper
+        style={{
+          color: darkMode ? "#ddd" : "#202124",
+          borderColor: darkMode ? "#3c4043" : "#ebebeb",
+        }}
+      >
+        <span>
+          <RiVideoLine size={20} />
+        </span>
+        <Heading>Project videos</Heading>
+        <BiDotsVerticalRounded size={20} />
+      </VideosHeadingWrapper>
+      <div>
+        {projectVideos.map((project, index) => {
+          return (
+            <VideoItem
+              style={{
+                borderColor: darkMode ? "#3c4043" : "#ebebeb",
+              }}
+            >
+              <ImageContainer
+                onClick={() => {
+                  window.open(project.link, "_blank");
+                }}
+              >
+                <Image
+                  src={project.image}
+                  alt="video"
+                  width={124}
+                  height={72}
+                  style={{
+                    borderRadius: ".5rem",
+                    zIndex: "-1",
+                  }}
+                />
+                <PlayIcon>
+                  <BsFillPlayCircleFill size={22} color="#FDFAF8" />
+                </PlayIcon>
+              </ImageContainer>
+              <Description>
+                <Title
+                  onClick={() => {
+                    window.open(project.link, "_blank");
+                  }}
+                >
+                  {project.heading}
+                </Title>
+                <div>
+                  <Text>
+                    <strong>{project.platform}</strong> {project.author}
+                  </Text>
+                  <Text>{project.date}</Text>
+                </div>
+              </Description>
+              {index === 2 && (
+                <NavLink href="/projects">
+                  <ViewAll darkMode={darkMode}>
+                    View all
+                    <span>
+                      <BsArrowRightShort size={25} />
+                    </span>
+                  </ViewAll>
+                </NavLink>
+              )}
+            </VideoItem>
+          );
+        })}
+      </div>
+    </VideosContainer>
   );
 };
 

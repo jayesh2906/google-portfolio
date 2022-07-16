@@ -11,7 +11,7 @@ import { ThemeContext } from "../../pages/_app";
 
 const NavBar = () => {
   const router = useRouter();
-  const { darkMode, handleThemeMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
   const activeStyle = {
     borderBottom: `2px solid ${darkMode ? "#79B4F8" : "#1A0DAB"}`,
     color: `${darkMode ? "#79B4F8" : "#1A0DAB"}`,

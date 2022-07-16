@@ -1,7 +1,10 @@
-import React, { useContext } from "react";
-import { Heading, AskForWrapper } from "./PeopleAlsoAsk.styled";
+import { useContext } from "react";
+import {
+  Heading,
+  AskForWrapper,
+  AccordionContainer,
+} from "./PeopleAlsoAsk.styled";
 import Accordion from "./Accordion";
-import { AccordionContainer } from "./PeopleAlsoAsk.styled";
 import { ThemeContext } from "../../pages/_app";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { accordionData } from "../../constants/constants";

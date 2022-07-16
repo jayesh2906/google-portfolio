@@ -12,6 +12,7 @@ export const TopSearchContainer = styled.div`
   width: 96%;
   gap: 5rem;
   padding: 1.6rem 0;
+  z-index: 999;
   flex-wrap: wrap;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.background};

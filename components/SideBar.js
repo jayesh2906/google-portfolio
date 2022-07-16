@@ -29,7 +29,7 @@ const SideBar = () => {
         style={{
           margin: ".5rem 0",
           padding: "0 1rem",
-          // textAlign: "center",
+          textAlign: "center",
         }}
       >
         A Detailed oriented and Committed Engineering Professional with a
