@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Text } from "../styles/Home.styled";
 
 export const ProfileContainer = styled.div`
   padding-top: 0.5rem;
@@ -27,4 +28,10 @@ export const Item = styled.div`
   p {
     word-break: break-all;
   }
+`;
+
+export const About = styled(Text)`
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+  text-align: center;
 `;

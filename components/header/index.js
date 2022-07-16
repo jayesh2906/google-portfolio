@@ -8,7 +8,7 @@ const Header = () => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <HeaderContainer style={{ borderColor: darkMode ? "#3c4043" : "#ebebeb" }}>
+    <HeaderContainer darkMode={darkMode}>
       <TopSearch />
       <NavBar />
     </HeaderContainer>

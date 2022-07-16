@@ -4,7 +4,6 @@ import ProjectVideos from "../components/projectVideos";
 import SideBar from "../components/SideBar";
 import TitleDesc from "../components/TitleDesc";
 import Image from "next/image";
-
 import {
   Text,
   Heading,
@@ -16,8 +15,9 @@ import {
   MobileProfile,
   MobileHeading,
 } from "../styles/Home.styled";
+import { info } from "../constants/constants";
 
-export default function Home(props) {
+export default function Home() {
   return (
     <div>
       <TitleDesc
@@ -26,13 +26,9 @@ export default function Home(props) {
       />
       <HomeContainer>
         <InfoContainer>
-          <Heading>Jayesh Choudhary: Software Engineer</Heading>
-          <MobileHeading>Jayesh Choudhary</MobileHeading>
-          <Text>
-            Experienced software engineer with a passion for developing
-            innovative programs that expedite the efficiency and effectiveness
-            of organizational success.
-          </Text>
+          <Heading>{info.heading}</Heading>
+          <MobileHeading>{info.mobileHeading}</MobileHeading>
+          <Text>{info.description}</Text>
           <MobileProfile>
             <Image
               style={{ zIndex: "-1" }}
@@ -43,26 +39,22 @@ export default function Home(props) {
             />
           </MobileProfile>
           <WorkExperience>
-            <Heading style={{ display: "block" }}>Work Experience</Heading>
-            <strong style={{ fontSize: "1.7rem" }}>Software Engineer</strong>
+            <Heading style={{ display: "block" }}>
+              {info.workExperience}
+            </Heading>
+            <strong>{info.designation}</strong>
             <Company>
-              <p>Mindtree Private Limited</p>
-              <i>03/2021 - Present</i>
+              <p>{info.company}</p>
+              <i>{info.timePeriod}</i>
             </Company>
             <ProjectList>
-              <li>
-                <strong>DHRE RealConnect (01/02/2022 - Present) :</strong>{" "}
-                Currently, Working on a live project from scratch as a React Js
-                Frontend developer.
-              </li>
-              <li>
-                <strong>Informa DNA (01/07/2021 - 31/01/2022) :</strong> Worked
-                with mentioned technologies : React Js, Redux-saga,
-                Redux-toolkit, SASS, Material Ui, axios, ag-grid-react, formik
-                and yup. Mainly worked on the Logical part of frontend like API
-                integration, Implementation of new features, Reusable
-                components, Bug fixes using React Js, JavaScript and SASS.
-              </li>
+              {info.workProjects.map(({ title, description }) => {
+                return (
+                  <li key={title}>
+                    <strong>{title}</strong> {description}
+                  </li>
+                );
+              })}
             </ProjectList>
           </WorkExperience>
           <PeopleAlsoAsk />

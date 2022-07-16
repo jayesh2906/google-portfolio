@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../../pages/_app";
 import { FiSun } from "react-icons/fi";
 import { BsMoonStars } from "react-icons/bs";
@@ -13,6 +13,7 @@ import {
   Profile,
   AccountDetails,
 } from "./Header.styled";
+import { accountDetails } from "../../constants/constants";
 
 const TopSearch = ({}) => {
   const { darkMode, handleThemeMode } = useContext(ThemeContext);
@@ -21,11 +22,7 @@ const TopSearch = ({}) => {
 
   const CloseIcon = () => {
     return (
-      <span
-        style={{ cursor: "pointer" }}
-        title="clear"
-        onClick={() => setSearch("")}
-      >
+      <span style={{ cursor: "pointer" }} onClick={() => setSearch("")}>
         <svg
           focusable="false"
           xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +65,7 @@ const TopSearch = ({}) => {
           <Image src="/logoLight.png" alt="Logo" width={92} height={30} />
         )}
       </Logo>
-      <SearchBox style={{ backgroundColor: darkMode ? "#303134" : "#FFFFFF" }}>
+      <SearchBox darkMode={darkMode}>
         <SearchInput
           type="text"
           value={search}
@@ -88,9 +85,9 @@ const TopSearch = ({}) => {
           J
           {showDetails && (
             <AccountDetails>
-              <h5>Google Account</h5>
-              <p>Jayesh Choudhary</p>
-              <p>jayesh.choudhary2906@gmail.com</p>
+              <h5>{accountDetails.account}</h5>
+              <p>{accountDetails.name}</p>
+              <p>{accountDetails.gmail}</p>
             </AccountDetails>
           )}
         </Profile>

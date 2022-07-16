@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const VideosContainer = styled.main`
   margin: 2.5rem 0;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 3rem 0;
+  }
 `;
 
 export const Heading = styled.h2`

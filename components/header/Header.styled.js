@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
   min-height: 100px;
   border-bottom: 1px solid #ebebeb;
+  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
 `;
 
 export const TopSearchContainer = styled.div`
@@ -47,6 +48,7 @@ export const SearchBox = styled.div`
   &:hover {
     box-shadow: 0 2px 8px 1px rgba(64, 60, 67, 0.24);
   }
+  background-color: ${({ darkMode }) => (darkMode ? "#303134" : "#FFFFFF")};
 `;
 
 export const SearchInput = styled.input`

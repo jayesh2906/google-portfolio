@@ -50,6 +50,10 @@ export const WorkExperience = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 1.3rem 0;
   }
+
+  strong {
+    font-size: 1.7rem;
+  }
 `;
 
 export const ProjectList = styled.ul`
@@ -62,6 +66,10 @@ export const Company = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 0.2rem;
+
+  i {
+    font-size: 1.4rem;
+  }
 `;
 
 export const MobileProfile = styled.div`
@@ -92,5 +100,10 @@ export const AsideContainer = styled.aside`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
+  }
+  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
+
+  hr {
+    margin: 0 1rem;
   }
 `;
