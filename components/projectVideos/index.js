@@ -44,6 +44,7 @@ const ProjectVideos = () => {
               style={{
                 borderColor: darkMode ? "#3c4043" : "#ebebeb",
               }}
+              key={project.heading}
             >
               <ImageContainer
                 onClick={() => {
