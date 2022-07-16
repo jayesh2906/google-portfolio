@@ -31,7 +31,7 @@ const SideBar = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Jayesh's Resume
+        {`Jayesh's Resume`}
       </ResumeWrapper>
       <hr />
       <ContactDetails>
