@@ -1,6 +1,6 @@
 import TitleDesc from "../components/TitleDesc";
 
-export default function Map() {
+const Map = () => {
   return (
     <div>
       <TitleDesc
@@ -12,4 +12,5 @@ export default function Map() {
       </main>
     </div>
   );
-}
+};
+export default Map;

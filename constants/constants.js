@@ -136,7 +136,7 @@ export const projectVideos = [
     heading: "Mini Laptop Implementation using React Js.",
     platform: `Linkedin.`,
     author: `Jayesh Choudhary`,
-    image: `/laptopdesign.png`,
+    image: `/assets/laptopdesign.png`,
     date: `1-Mar-2022`,
     link: `https://www.linkedin.com/feed/update/urn:li:ugcPost:6904281486057373696/`,
   },
@@ -144,7 +144,7 @@ export const projectVideos = [
     heading: "House Design with pure CSS [2022].",
     platform: `Linkedin.`,
     author: `Jayesh Choudhary`,
-    image: `/housedesign.png`,
+    image: `/assets/housedesign.png`,
     date: `12-Jan-2022`,
     link: `https://www.linkedin.com/posts/jayesh-choudhary-72444518b_css-animation-perspective3d-activity-6886298154199773184-C74d`,
   },
@@ -152,7 +152,7 @@ export const projectVideos = [
     heading: "IPL-2022 Web Application using React Js.",
     platform: `Linkedin.`,
     author: `Jayesh Choudhary`,
-    image: `/ipl2022.png`,
+    image: `/assets/ipl2022.png`,
     date: `26-Mar-2022`,
     link: `https://www.linkedin.com/feed/update/urn:li:activity:6913334580070498304/`,
   },
@@ -160,7 +160,7 @@ export const projectVideos = [
 
 export const relatedsearch = [
   {
-    text: "Jayesh's skills",
+    text: "Jayesh's Skills",
     href: "/skills",
   },
   {

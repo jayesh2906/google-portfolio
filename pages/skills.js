@@ -1,6 +1,6 @@
 import TitleDesc from "../components/TitleDesc";
 
-export default function Skills() {
+const Skills = () => {
   return (
     <div>
       <TitleDesc
@@ -12,4 +12,5 @@ export default function Skills() {
       </main>
     </div>
   );
-}
+};
+export default Skills;

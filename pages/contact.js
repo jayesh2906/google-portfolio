@@ -1,6 +1,6 @@
 import TitleDesc from "../components/TitleDesc";
 
-export default function Contact() {
+const Contact = () => {
   return (
     <div>
       <TitleDesc title="Contact Jayesh" desc="Here you can contact Jayesh." />
@@ -9,4 +9,5 @@ export default function Contact() {
       </main>
     </div>
   );
-}
+};
+export default Contact;

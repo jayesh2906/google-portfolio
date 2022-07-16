@@ -14,13 +14,17 @@ export const AskForWrapper = styled.div`
   display: flex;
   align-items: center;
   padding-bottom: 1rem;
+  color: ${({ darkMode }) => (darkMode ? "#ddd" : "#202124")};
 `;
 
 export const AccordionItem = styled.div`
   :last-child {
-    border-bottom: 1px solid #ecedef;
+    border-bottom: 1px solid
+      ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
   }
+  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
 `;
+
 export const AccordionTitle = styled.div`
   display: flex;
   justify-content: space-between;

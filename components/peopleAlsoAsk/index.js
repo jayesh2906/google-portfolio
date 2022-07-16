@@ -11,13 +11,14 @@ import { accordionData } from "../../constants/constants";
 
 const PeopleAlsoAsk = () => {
   const { darkMode } = useContext(ThemeContext);
+
   return (
     <AccordionContainer>
-      <AskForWrapper style={{ color: darkMode ? "#ddd" : "#202124" }}>
+      <AskForWrapper darkMode={darkMode}>
         <Heading>People also ask</Heading>
         <BiDotsVerticalRounded size={20} />
       </AskForWrapper>
-      <div className="accordion">
+      <div>
         {accordionData.map(({ question, answer }, index) => (
           <Accordion
             key={question}

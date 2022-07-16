@@ -19,6 +19,8 @@ export const VideosHeadingWrapper = styled.div`
   align-items: center;
   padding: 1rem 0;
   border-bottom: 1px solid #ecedef;
+  color: ${({ darkMode }) => (darkMode ? "#ddd" : "#202124")};
+  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
 `;
 
 export const VideoItem = styled.div`
@@ -31,6 +33,7 @@ export const VideoItem = styled.div`
   :last-child {
     padding-bottom: 3rem;
   }
+  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
 `;
 
 export const ViewAll = styled.div`

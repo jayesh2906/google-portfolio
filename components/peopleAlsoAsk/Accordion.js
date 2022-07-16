@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../../pages/_app";
 import {
   AccordionItem,
@@ -13,7 +13,7 @@ const Accordion = ({ question, answer, index }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <AccordionItem style={{ borderColor: darkMode ? "#3c4043" : "#ebebeb" }}>
+    <AccordionItem darkMode={darkMode}>
       <AccordionTitle onClick={() => setIsActive(!isActive)}>
         <div>{question}</div>
         <div>
@@ -28,11 +28,9 @@ const Accordion = ({ question, answer, index }) => {
         <AccordionContent>
           {answer}{" "}
           {index === 0 && (
-            <React.Fragment>
-              <a>
-                <NavLink href="/skills">View all skills...</NavLink>
-              </a>
-            </React.Fragment>
+            <a>
+              <NavLink href="/skills">View all skills...</NavLink>
+            </a>
           )}
         </AccordionContent>
       )}

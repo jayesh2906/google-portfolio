@@ -1,6 +1,6 @@
 import TitleDesc from "../components/TitleDesc";
 
-export default function Projectls() {
+const Projects = () => {
   return (
     <div>
       <TitleDesc
@@ -12,4 +12,6 @@ export default function Projectls() {
       </main>
     </div>
   );
-}
+};
+
+export default Projects;

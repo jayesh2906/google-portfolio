@@ -21,12 +21,7 @@ const RelatedSearch = () => {
 
   return (
     <RelatedSearchContainer>
-      <VideosHeadingWrapper
-        style={{
-          color: darkMode ? "#ddd" : "#202124",
-          borderColor: darkMode ? "#3c4043" : "#ebebeb",
-        }}
-      >
+      <VideosHeadingWrapper darkMode={darkMode}>
         <Heading>Related Search</Heading>
         <BiDotsVerticalRounded size={20} />
       </VideosHeadingWrapper>

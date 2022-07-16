@@ -17,7 +17,7 @@ import {
 } from "../styles/Home.styled";
 import { info } from "../constants/constants";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <TitleDesc
@@ -32,7 +32,7 @@ export default function Home() {
           <MobileProfile>
             <Image
               style={{ zIndex: "-1" }}
-              src="/Profile.png"
+              src="/assets/Profile.png"
               alt="Profile"
               width={280}
               height={280}
@@ -65,4 +65,6 @@ export default function Home() {
       </HomeContainer>
     </div>
   );
-}
+};
+
+export default Home;

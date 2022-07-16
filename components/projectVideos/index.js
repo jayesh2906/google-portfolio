@@ -25,12 +25,7 @@ const ProjectVideos = () => {
 
   return (
     <VideosContainer>
-      <VideosHeadingWrapper
-        style={{
-          color: darkMode ? "#ddd" : "#202124",
-          borderColor: darkMode ? "#3c4043" : "#ebebeb",
-        }}
-      >
+      <VideosHeadingWrapper darkMode={darkMode}>
         <span>
           <RiVideoLine size={20} />
         </span>
@@ -40,12 +35,7 @@ const ProjectVideos = () => {
       <div>
         {projectVideos.map((project, index) => {
           return (
-            <VideoItem
-              style={{
-                borderColor: darkMode ? "#3c4043" : "#ebebeb",
-              }}
-              key={project.heading}
-            >
+            <VideoItem darkMode={darkMode} key={project.heading}>
               <ImageContainer
                 onClick={() => {
                   window.open(project.link, "_blank");
