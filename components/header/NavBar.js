@@ -19,7 +19,10 @@ const NavBar = () => {
         {navBar.map(({ name, path, icon: Icon }) => {
           return (
             <NavLink key={name} href={path}>
-              <LinkWrapper style={router.pathname == path ? activeStyle : {}}>
+              <LinkWrapper
+                darkMode={darkMode}
+                style={router.pathname == path ? activeStyle : {}}
+              >
                 <Icon size={20} />
                 <li>{name}</li>
               </LinkWrapper>
