@@ -51,7 +51,7 @@ export const WorkExperience = styled.div`
     padding: 1.3rem 0;
   }
 
-  strong {
+  & > strong {
     font-size: 1.7rem;
   }
 `;
