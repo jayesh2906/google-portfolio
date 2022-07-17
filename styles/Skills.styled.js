@@ -6,6 +6,9 @@ export const SkillContainer = styled.main`
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 0px;
   }
+  & > p {
+    line-height: 2rem;
+  }
 `;
 
 export const SkillOverview = styled.div`

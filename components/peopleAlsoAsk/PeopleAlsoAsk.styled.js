@@ -37,6 +37,7 @@ export const AccordionTitle = styled.div`
 export const AccordionContent = styled.div`
   padding-bottom: 1.2rem;
   padding-top: 0rem;
+  line-height: 2rem;
 
   a {
     color: ${({ theme }) => theme.colors.secondary};

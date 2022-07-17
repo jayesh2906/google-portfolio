@@ -31,5 +31,6 @@ export const Item = styled.div`
 export const About = styled(Text)`
   margin: 0.5rem 0;
   padding: 0 1rem;
+  line-height: 2rem;
   text-align: center;
 `;

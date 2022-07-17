@@ -49,13 +49,16 @@ export const MobileHeading = styled(Heading)`
   }
 `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+  line-height: 2rem;
+`;
 
 export const WorkExperience = styled.div`
   padding: 1.5rem 1.5rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 1.3rem 0;
   }
+  line-height: 2rem;
 
   & > strong {
     font-size: 1.7rem;
