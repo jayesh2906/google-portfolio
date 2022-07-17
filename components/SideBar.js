@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { sideBarInfo } from "../constants/constants";
 import { ThemeContext } from "../pages/_app";
 import { AsideContainer, ResumeWrapper } from "../styles/Home.styled";
+import { AiOutlineDownload } from "react-icons/ai";
 import {
   ContactDetails,
   Item,
@@ -14,7 +15,7 @@ const SideBar = () => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <AsideContainer darkMode={darkMode}>
+    <AsideContainer>
       <ProfileContainer>
         <Image
           style={{ zIndex: "-1" }}
@@ -26,12 +27,12 @@ const SideBar = () => {
       </ProfileContainer>
       <About>{sideBarInfo.about}</About>
       <ResumeWrapper
-        darkMode={darkMode}
         href="/assets/Jayesh's Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
         {`Jayesh's Resume`}
+        <AiOutlineDownload size={19} />
       </ResumeWrapper>
       <hr />
       <ContactDetails>

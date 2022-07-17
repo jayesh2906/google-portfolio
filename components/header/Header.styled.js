@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
   min-height: 100px;
   border-bottom: 1px solid #ebebeb;
-  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
+  border-color: ${({ theme }) => theme.colors.borderColor};
 `;
 
 export const TopSearchContainer = styled.div`

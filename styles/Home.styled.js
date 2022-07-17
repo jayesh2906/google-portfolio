@@ -107,7 +107,7 @@ export const AsideContainer = styled.aside`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
   }
-  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
+  border-color: ${({ theme }) => theme.colors.borderColor};
 
   hr {
     margin: 0 1rem;
@@ -116,30 +116,33 @@ export const AsideContainer = styled.aside`
 
 export const ResumeWrapper = styled.a`
   padding: 1rem;
-  color: ${({ darkMode }) => (darkMode ? "#ddd" : "#202124")};
-  background: ${({ darkMode }) => (darkMode ? "#303134" : "#f1f3f4")};
+  color: ${({ theme }) => theme.colors.headingColor};
+  background: ${({ theme }) => theme.colors.content};
   border: 2px solid rgba(255, 255, 255, 0);
   cursor: pointer;
   border-radius: 2rem;
   font-weight: 600;
   display: block;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   margin: 0.8rem auto;
-  text-align: center;
   &:hover {
-    background: ${({ darkMode }) => (darkMode ? "#3c4043" : "#d8d7dc")};
+    background: ${({ theme }) => theme.colors.contentHover};
   }
   text-decoration: none;
   @media ${(props) => props.theme.breakpoints.xl} {
-    width: 56%;
+    width: 63%;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
-    width: 70%;
+    width: 79%;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 75%;
+    width: 86%;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 54%;
+    width: 64%;
   }
 `;

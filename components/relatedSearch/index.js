@@ -1,8 +1,6 @@
-import { useContext } from "react";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { AiOutlineSearch } from "react-icons/ai";
 import { relatedsearch } from "../../constants/constants";
-import { ThemeContext } from "../../pages/_app";
 import {
   Heading,
   VideosHeadingWrapper,
@@ -16,12 +14,11 @@ import {
 import { useRouter } from "next/router";
 
 const RelatedSearch = () => {
-  const { darkMode } = useContext(ThemeContext);
   const router = useRouter();
 
   return (
     <RelatedSearchContainer>
-      <VideosHeadingWrapper darkMode={darkMode}>
+      <VideosHeadingWrapper>
         <Heading>Related Search</Heading>
         <BiDotsVerticalRounded size={20} />
       </VideosHeadingWrapper>
@@ -30,7 +27,6 @@ const RelatedSearch = () => {
           return (
             <SearchItem
               key={text}
-              darkMode={darkMode}
               onClick={() => {
                 router.push(href);
               }}

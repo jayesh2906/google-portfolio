@@ -4,6 +4,7 @@ import ProjectVideos from "../components/projectVideos";
 import SideBar from "../components/SideBar";
 import TitleDesc from "../components/TitleDesc";
 import Image from "next/image";
+import { AiOutlineDownload } from "react-icons/ai";
 import {
   Text,
   Heading,
@@ -17,12 +18,8 @@ import {
   ResumeWrapper,
 } from "../styles/Home.styled";
 import { info } from "../constants/constants";
-import { useContext } from "react";
-import { ThemeContext } from "./_app";
 
 const Home = () => {
-  const { darkMode } = useContext(ThemeContext);
-
   return (
     <div>
       <TitleDesc
@@ -45,12 +42,12 @@ const Home = () => {
           </MobileProfile>
           <span>
             <ResumeWrapper
-              darkMode={darkMode}
               href="/assets/Jayesh's Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
               {`Jayesh's Resume`}
+              <AiOutlineDownload size={19} />
             </ResumeWrapper>
           </span>
           <WorkExperience>

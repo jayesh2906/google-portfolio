@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import {
   Heading,
   VideosHeadingWrapper,
@@ -16,16 +15,13 @@ import { BiDotsVerticalRounded } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
 import { RiVideoLine } from "react-icons/ri";
 import { BsFillPlayCircleFill } from "react-icons/bs";
-import { ThemeContext } from "../../pages/_app";
 import { projectVideos } from "../../constants/constants";
 import Image from "next/image";
 
 const ProjectVideos = () => {
-  const { darkMode } = useContext(ThemeContext);
-
   return (
     <VideosContainer>
-      <VideosHeadingWrapper darkMode={darkMode}>
+      <VideosHeadingWrapper>
         <span>
           <RiVideoLine size={20} />
         </span>
@@ -35,7 +31,7 @@ const ProjectVideos = () => {
       <div>
         {projectVideos.map((project, index) => {
           return (
-            <VideoItem darkMode={darkMode} key={project.heading}>
+            <VideoItem key={project.heading}>
               <ImageContainer
                 onClick={() => {
                   window.open(project.link, "_blank");
@@ -72,7 +68,7 @@ const ProjectVideos = () => {
               </Description>
               {index === 2 && (
                 <NavLink href="/projects">
-                  <ViewAll darkMode={darkMode}>
+                  <ViewAll>
                     View all
                     <span>
                       <BsArrowRightShort size={25} />

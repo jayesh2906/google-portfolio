@@ -184,27 +184,26 @@ export const footerData = {
   name: "JayeshChoudhary",
   year: "2022",
   darkTheme: "Dark theme: ",
+  socialLinks: [
+    {
+      href: "https://www.linkedin.com/in/jayesh-choudhary-72444518b/",
+      icon: FaLinkedin,
+    },
+    {
+      href: "https://jayesh2906.github.io",
+      icon: BiLinkAlt,
+    },
+    {
+      href: "https://github.com/jayesh2906",
+      icon: FaGithub,
+    },
+    {
+      href: "https://www.instagram.com/insta__jc/",
+      icon: FaInstagram,
+    },
+    {
+      href: "https://twitter.com/JayeshMERN",
+      icon: FaTwitterSquare,
+    },
+  ],
 };
-
-export const socialLinks = [
-  {
-    href: "https://www.linkedin.com/in/jayesh-choudhary-72444518b/",
-    icon: FaLinkedin,
-  },
-  {
-    href: "https://jayesh2906.github.io",
-    icon: BiLinkAlt,
-  },
-  {
-    href: "https://github.com/jayesh2906",
-    icon: FaGithub,
-  },
-  {
-    href: "https://www.instagram.com/insta__jc/",
-    icon: FaInstagram,
-  },
-  {
-    href: "https://twitter.com/JayeshMERN",
-    icon: FaTwitterSquare,
-  },
-];

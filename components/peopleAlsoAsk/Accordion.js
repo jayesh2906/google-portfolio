@@ -1,5 +1,4 @@
-import { useContext, useState } from "react";
-import { ThemeContext } from "../../pages/_app";
+import { useState } from "react";
 import {
   AccordionItem,
   AccordionTitle,
@@ -9,11 +8,10 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import NavLink from "next/link";
 
 const Accordion = ({ question, answer, index }) => {
-  const { darkMode } = useContext(ThemeContext);
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <AccordionItem darkMode={darkMode}>
+    <AccordionItem>
       <AccordionTitle onClick={() => setIsActive(!isActive)}>
         <div>{question}</div>
         <div>

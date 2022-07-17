@@ -19,8 +19,8 @@ export const VideosHeadingWrapper = styled.div`
   align-items: center;
   padding: 1rem 0;
   border-bottom: 1px solid #ecedef;
-  color: ${({ darkMode }) => (darkMode ? "#ddd" : "#202124")};
-  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
+  color: ${({ theme }) => theme.colors.headingColor};
+  border-color: ${({ theme }) => theme.colors.borderColor};
 `;
 
 export const VideoItem = styled.div`
@@ -33,7 +33,7 @@ export const VideoItem = styled.div`
   :last-child {
     padding-bottom: 3rem;
   }
-  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
+  border-color: ${({ theme }) => theme.colors.borderColor};
 `;
 
 export const ViewAll = styled.div`
@@ -43,7 +43,7 @@ export const ViewAll = styled.div`
   position: absolute;
   width: 50%;
   padding: 0.3rem 0;
-  background: ${({ darkMode }) => (darkMode ? "#303134" : "#f1f3f4")};
+  background: ${({ theme }) => theme.colors.content};
   border: 1px solid rgba(255, 255, 255, 0);
   cursor: pointer;
   border-radius: 1.8rem;
@@ -52,7 +52,7 @@ export const ViewAll = styled.div`
   transform: translate(-50%);
 
   &:hover {
-    background: ${({ darkMode }) => (darkMode ? "#3c4043" : "#d8d7dc")};
+    background: ${({ theme }) => theme.colors.contentHover};
   }
 `;
 

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const RelatedSearchContainer = styled.main`
   margin-top: 4.5rem;
-  margin-bottom: 3.5rem;
 `;
 
 export const SearchWrapper = styled.main`
@@ -20,13 +19,13 @@ export const SearchItem = styled.main`
   align-items: center;
   gap: 1rem;
   width: 100%;
-  background: ${({ darkMode }) => (darkMode ? "#303134" : "#f1f3f4")};
+  background: ${({ theme }) => theme.colors.content};
   border: 1px solid rgba(255, 255, 255, 0);
   cursor: pointer;
   border-radius: 2rem;
   padding: 1rem 2rem;
   &:hover {
-    background: ${({ darkMode }) => (darkMode ? "#3c4043" : "#d8d7dc")};
+    background: ${({ theme }) => theme.colors.contentHover};
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 90%;

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../pages/_app";
 import { FooterContainer, SocialLinks } from "./Footer.styled";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
-import { footerData, socialLinks } from "../../constants/constants";
+import { footerData } from "../../constants/constants";
 
 const Footer = () => {
   const { darkMode, handleThemeMode } = useContext(ThemeContext);
@@ -18,9 +18,8 @@ const Footer = () => {
         {footerData.darkTheme}
         {darkMode ? "on" : "off"}
       </span>
-
       <SocialLinks darkMode={darkMode}>
-        {socialLinks.map(({ href, icon: Icon }) => {
+        {footerData.socialLinks.map(({ href, icon: Icon }) => {
           return (
             <a key={Icon} href={href} target="_blank" rel="noopener noreferrer">
               <Icon size={22} />

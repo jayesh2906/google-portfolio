@@ -14,15 +14,14 @@ export const AskForWrapper = styled.div`
   display: flex;
   align-items: center;
   padding-bottom: 1rem;
-  color: ${({ darkMode }) => (darkMode ? "#ddd" : "#202124")};
+  color: ${({ theme }) => theme.colors.headingColor};
 `;
 
 export const AccordionItem = styled.div`
   :last-child {
-    border-bottom: 1px solid
-      ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
   }
-  border-color: ${({ darkMode }) => (darkMode ? "#3c4043" : "#ebebeb")};
+  border-color: ${({ theme }) => theme.colors.borderColor};
 `;
 
 export const AccordionTitle = styled.div`
