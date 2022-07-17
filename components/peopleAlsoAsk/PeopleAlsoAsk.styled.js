@@ -36,7 +36,7 @@ export const AccordionTitle = styled.div`
 `;
 export const AccordionContent = styled.div`
   padding-bottom: 1.2rem;
-  padding-top: 0rem;
+  margin-top: -0.7rem;
   line-height: 2rem;
 
   a {
