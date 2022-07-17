@@ -31,6 +31,7 @@ const Skills = () => {
           {skillsData.skillsIcons.map(({ title, href, src, shadowColor }) => {
             return (
               <SkillItem
+                key={title}
                 shadowColor={shadowColor}
                 href={href}
                 target="_blank"
