@@ -24,6 +24,12 @@ export const SkillOverview = styled.div`
     &:hover {
       background: ${({ theme }) => theme.colors.contentHover};
     }
+    @media ${(props) => props.theme.breakpoints.lg} {
+      flex-basis: 100%;
+    }
+    @media ${(props) => props.theme.breakpoints.md} {
+      flex-basis: 48%;
+    }
     @media ${(props) => props.theme.breakpoints.sm} {
       flex-basis: 100%;
       border-radius: 1.5rem;
@@ -42,5 +48,46 @@ export const SkillOverview = styled.div`
       padding: 0, 0.5rem;
       padding-top: 0.5rem;
     }
+  }
+`;
+
+export const SkillsGrid = styled.div`
+  margin: 2rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.8rem 1.2rem;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.8rem 1.2rem;
+  }
+`;
+
+export const SkillItem = styled.a`
+  display: block;
+  filter: drop-shadow(0 4px 3px ${({ shadowColor }) => shadowColor})
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  transition: 500ms all;
+  padding: 0.8rem 0;
+  border-radius: 0.8rem;
+  background: ${({ theme }) => theme.colors.contentBackground};
+  &:hover {
+    background: ${({ theme }) => theme.colors.contentHover};
+  }
+  color: ${({ theme }) => theme.colors.headingColor};
+
+  &:hover {
+    transform: scale(105%);
+  }
+
+  & > p {
+    font-weight: 600;
+    margin-top: 0.8rem;
   }
 `;

@@ -12,7 +12,7 @@ export const HomeContainer = styled.main`
 
 export const InfoContainer = styled.section`
   flex-basis: 50%;
-  padding: 2rem 0;
+  padding-top: 2rem;
   @media ${(props) => props.theme.breakpoints.md} {
     flex-basis: 55%;
   }

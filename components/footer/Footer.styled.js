@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.section`
-  margin-top: 3.5rem;
+  margin-top: 7rem;
   padding: 2rem;
   background-color: ${({ darkMode }) => (darkMode ? "#171717" : "#F2F2F2")};
   display: flex;

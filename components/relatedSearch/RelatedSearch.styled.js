@@ -5,7 +5,7 @@ export const RelatedSearchContainer = styled.main`
 `;
 
 export const SearchWrapper = styled.main`
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 2rem;

@@ -207,3 +207,109 @@ export const footerData = {
     },
   ],
 };
+
+export const skillsData = {
+  info: "Jayesh loves to develop innovative web apps using new technologies, He is keen to gain experience, enhance and upgrade his skills, He enjoys building everything from small sites and landing pages to rich interactive web apps. He loves creating visually stunning, unique and responsive web apps.",
+  skills: [
+    {
+      title: "Frontend Skills",
+      description:
+        "JavaScript, React Js, Redux, React Native, Next Js, Html5, CSS3,Tailwind Css, Material Ui, Bootstrap5, Sass and Styled Component.",
+    },
+    {
+      title: "Backend Skills",
+      description:
+        "Node Js, Express Js, Mongo Db, Next Js, Postman and Jwt-Authentication.",
+    },
+  ],
+  skillsIcons: [
+    {
+      title: "React Js",
+      href: "https://reactjs.org/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      shadowColor: "#61DAFB",
+    },
+    {
+      title: "JavaScript",
+      href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      shadowColor: "#F0DB4F",
+    },
+    {
+      title: "Redux",
+      href: "https://redux.js.org",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      shadowColor: "#9B59B6",
+    },
+    {
+      title: "Css 3",
+      href: "https://www.w3schools.com/css/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      shadowColor: "#3b82f6",
+    },
+    {
+      title: "Next Js",
+      href: "https://nextjs.org/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    },
+    {
+      title: "Html 5",
+      href: "https://www.w3.org/html/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      shadowColor: "#f97316",
+    },
+    {
+      title: "Tailwind Css",
+      href: "https://tailwindcss.com/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      shadowColor: "#38bdf8",
+    },
+    {
+      title: "Material Ui",
+      href: "https://mui.com/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+      shadowColor: "#1C7FB6",
+    },
+    {
+      title: "Bootstrap 5",
+      href: "https://getbootstrap.com",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      shadowColor: "#7C12F8",
+    },
+    {
+      title: "Sass",
+      href: "https://sass-lang.com",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+      shadowColor: "#CB6699",
+    },
+    {
+      title: "Node Js",
+      href: "https://nodejs.org",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      shadowColor: "#83CD29",
+    },
+    {
+      title: "Express Js",
+      href: "https://expressjs.com",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    },
+    {
+      title: "Mongo Db",
+      href: "https://www.mongodb.com/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      shadowColor: "#75BB69",
+    },
+    {
+      title: "Git",
+      href: "https://git-scm.com/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      shadowColor: "#F34F29",
+    },
+    {
+      title: "TypeScript",
+      href: "https://www.typescriptlang.org/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      shadowColor: "#007ACC",
+    },
+  ],
+};
