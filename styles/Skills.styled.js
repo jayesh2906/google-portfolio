@@ -52,7 +52,7 @@ export const SkillOverview = styled.div`
 `;
 
 export const SkillsGrid = styled.div`
-  margin: 2rem 0;
+  margin-top: 2rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
