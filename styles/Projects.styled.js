@@ -39,13 +39,15 @@ export const ProjectItem = styled.div`
   flex-direction: column;
   gap: 1rem;
   background: ${({ theme }) => theme.colors.contentBackground};
-  &:hover {
-    background: ${({ theme }) => theme.colors.contentHover};
+  @media (hover: hover) {
+    &:hover {
+      background: ${({ theme }) => theme.colors.contentHover};
+    }
+    &:hover {
+      transform: scale(105%);
+    }
   }
   color: ${({ theme }) => theme.colors.headingColor};
-  &:hover {
-    transform: scale(105%);
-  }
 
   & > h3 {
     text-align: center;
