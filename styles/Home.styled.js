@@ -117,7 +117,7 @@ export const AsideContainer = styled.aside`
 export const ResumeWrapper = styled.a`
   padding: 1rem;
   color: ${({ theme }) => theme.colors.headingColor};
-  background: ${({ theme }) => theme.colors.content};
+  background: ${({ theme }) => theme.colors.contentBackground};
   border: 2px solid rgba(255, 255, 255, 0);
   cursor: pointer;
   border-radius: 2rem;

@@ -19,7 +19,7 @@ export const SearchItem = styled.main`
   align-items: center;
   gap: 1rem;
   width: 100%;
-  background: ${({ theme }) => theme.colors.content};
+  background: ${({ theme }) => theme.colors.contentBackground};
   border: 1px solid rgba(255, 255, 255, 0);
   cursor: pointer;
   border-radius: 2rem;

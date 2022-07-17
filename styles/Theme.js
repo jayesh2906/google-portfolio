@@ -7,7 +7,7 @@ const getTheme = (darkMode) => ({
     primary: darkMode ? "#BCC0C3" : "#4D5156",
     secondary: darkMode ? "#79B4F8" : "#1A0DAB",
     background: darkMode ? "#202124" : "#FFFFFF",
-    content: darkMode ? "#303134" : "#f1f3f4",
+    contentBackground: darkMode ? "#303134" : "#f1f3f4",
     contentHover: darkMode ? "#3c4043" : "#d8d7dc",
     borderColor: darkMode ? "#3c4043" : "#ebebeb",
     headingColor: darkMode ? "#ddd" : "#202124",
