@@ -22,6 +22,7 @@ export const SkillOverview = styled.div`
     flex-basis: 48%;
     padding: 1.5rem;
     text-align: center;
+    transition: 500ms all;
     background: ${({ theme }) => theme.colors.contentBackground};
     border-radius: 2rem;
     &:hover {
