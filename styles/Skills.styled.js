@@ -64,11 +64,14 @@ export const SkillsGrid = styled.div`
   padding: 0.8rem 0;
   @media ${(props) => props.theme.breakpoints.lg} {
     grid-template-columns: repeat(3, 1fr);
-    padding: 0.8rem 1.2rem;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 98%;
+    margin: auto;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0.8rem 1.2rem;
   }
 `;
 
