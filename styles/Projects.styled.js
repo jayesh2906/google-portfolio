@@ -26,6 +26,7 @@ export const ProjectsGrid = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-template-columns: 1fr;
     width: 100%;
+    row-gap: 3.5rem;
   }
 `;
 
