@@ -253,6 +253,12 @@ export const skillsData = {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     },
     {
+      title: "React Native",
+      href: "https://reactnative.dev/",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      shadowColor: "#61DAFB",
+    },
+    {
       title: "Html 5",
       href: "https://www.w3.org/html/",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -310,6 +316,18 @@ export const skillsData = {
       href: "https://www.typescriptlang.org/",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       shadowColor: "#007ACC",
+    },
+    {
+      title: "Styled Components",
+      href: "https://styled-components.com/",
+      src: "/assets/styledComponents.png",
+      shadowColor: "#CB6699",
+    },
+    {
+      title: "Postman",
+      href: "https://www.postman.com/",
+      src: "/assets/postman.png",
+      shadowColor: "#f97316",
     },
   ],
 };

@@ -57,15 +57,21 @@ const Projects = () => {
                     })}
                   </ul>
                   <ButtonGroups>
-                    <a href={videoDemo} target="_blank" rel="noreferrer">
-                      Video Demo
-                    </a>
-                    <a href={liveDemo} target="_blank" rel="noreferrer">
-                      Live Demo
-                    </a>
-                    <a href={sourceCode} target="_blank" rel="noreferrer">
-                      Source Code
-                    </a>
+                    {videoDemo && (
+                      <a href={videoDemo} target="_blank" rel="noreferrer">
+                        Video Demo
+                      </a>
+                    )}
+                    {liveDemo && (
+                      <a href={liveDemo} target="_blank" rel="noreferrer">
+                        Live Demo
+                      </a>
+                    )}
+                    {sourceCode && (
+                      <a href={sourceCode} target="_blank" rel="noreferrer">
+                        Source Code
+                      </a>
+                    )}
                   </ButtonGroups>
                 </ProjectItem>
               );
