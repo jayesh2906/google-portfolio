@@ -3,12 +3,18 @@ import styled from "styled-components";
 export const ContactContainer = styled.main`
   margin-top: 2rem;
   padding-left: calc(92px + 5rem + 2rem);
-  padding-right: calc(92px + 5rem + 15rem);
+  padding-right: calc(92px + 5rem + 5rem);
   @media ${(props) => props.theme.breakpoints.lg} {
     padding: 0 calc(92px);
   }
   @media ${(props) => props.theme.breakpoints.md} {
+    width: 98%;
+    margin: auto;
+    margin-top: 2rem;
     padding: 0px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
   }
 
   div {
@@ -25,7 +31,7 @@ export const ContactContainer = styled.main`
   input[type="text"],
   input[type="email"],
   textarea {
-    background: ${({ theme }) => theme.colors.contentBackground};
+    background: ${({ theme }) => theme.colors.background};
     border: 2px solid ${({ theme }) => theme.colors.borderColor};
     border-radius: 0.7rem;
     padding: 1rem;
@@ -44,7 +50,7 @@ export const ContactContainer = styled.main`
   }
 
   textarea {
-    height: 10rem;
+    height: 12rem;
     resize: none;
   }
 
@@ -117,5 +123,52 @@ export const SubmitWrapper = styled.section`
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+  }
+`;
+
+export const ContactForm = styled.section`
+  filter: drop-shadow(0 ${({ darkMode }) => (darkMode ? "2px" : "4px")} 3px)
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  transition: 500ms all;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border-radius: 0.8rem;
+  background: ${({ theme }) => theme.colors.contentBackground};
+`;
+
+export const ContactDetails = styled.section`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+export const ContactItem = styled.section`
+  filter: drop-shadow(0 ${({ darkMode }) => (darkMode ? "1px" : "3px")} 3px)
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  transition: 500ms all;
+  padding: 1rem 0;
+  border-radius: 0.8rem;
+  background: ${({ theme }) => theme.colors.contentBackground};
+  &:hover {
+    background: ${({ theme }) => theme.colors.contentHover};
+  }
+  color: ${({ theme }) => theme.colors.headingColor};
+
+  & > p {
+    font-weight: 600;
+    margin: 0.7rem;
+  }
+  & > a {
+    color: ${({ theme }) => theme.colors.secondary};
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;

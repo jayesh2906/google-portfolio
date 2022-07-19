@@ -14,6 +14,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { MdLocationOn } from "react-icons/md";
+import { MdCall } from "react-icons/md";
 
 export const accountDetails = {
   account: "Google Account",
@@ -429,5 +431,32 @@ export const projectsData = [
       "https://www.linkedin.com/feed/update/urn:li:activity:6842939354764201984/",
     liveDemo: "",
     sourceCode: "",
+  },
+];
+
+export const contactDetails = [
+  {
+    icon: MdCall,
+    type: "Mobile",
+    value: "8329812727",
+    href: "",
+  },
+  {
+    icon: GrMail,
+    type: "Email",
+    value: "jayesh.choudhary2906@gmail.com",
+    href: "mailto:jayesh.choudhary2906@gmail.com",
+  },
+  {
+    icon: MdLocationOn,
+    type: "Address",
+    value: "Burhanpur, Madhya Pradesh",
+    href: "",
+  },
+  {
+    icon: FaLinkedin,
+    type: "Linkedin",
+    value: "Contact through Linkedin",
+    href: "https://www.linkedin.com/in/jayesh-choudhary-72444518b/",
   },
 ];

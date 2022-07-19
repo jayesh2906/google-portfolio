@@ -1,16 +1,22 @@
 import TitleDesc from "../components/TitleDesc";
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   ContactContainer,
+  ContactDetails,
+  ContactForm,
+  ContactItem,
   NameEmail,
   ResultWrapper,
   SubmitButton,
   SubmitWrapper,
 } from "../styles/Contact.styled";
 import { AiOutlineSend } from "react-icons/ai";
+import { contactDetails } from "../constants/constants";
+import { ThemeContext } from "./_app";
 
 const Contact = () => {
+  const { darkMode } = useContext(ThemeContext);
   const [showResult, SetShowResult] = useState(false);
   const [error, SetError] = useState(false);
   const form = useRef();
@@ -47,52 +53,71 @@ const Contact = () => {
     <div>
       <TitleDesc title="Contact Jayesh" desc="Here you can contact Jayesh." />
       <ContactContainer>
-        <form ref={form} onSubmit={sendEmail}>
-          <NameEmail>
+        <ContactDetails>
+          {contactDetails.map(({ icon: Icon, type, value, href }) => {
+            return (
+              <ContactItem key={type} darkMode={darkMode}>
+                <Icon size={24} />
+                <p>{type}</p>
+                {href ? (
+                  <a href={href} target="_blank" rel="noreferrer">
+                    {value}
+                  </a>
+                ) : (
+                  <span>{value}</span>
+                )}
+              </ContactItem>
+            );
+          })}
+        </ContactDetails>
+        <ContactForm>
+          <form ref={form} onSubmit={sendEmail}>
+            <NameEmail>
+              <div>
+                <label>Name *</label>
+                <input
+                  type="text"
+                  placeholder="Your name..."
+                  required
+                  name="name"
+                />
+              </div>
+              <div>
+                <label>Email *</label>
+                <input
+                  type="email"
+                  placeholder="Your email..."
+                  required
+                  name="email"
+                />
+              </div>
+            </NameEmail>
             <div>
-              <label>Name *</label>
+              <label>Subject *</label>
               <input
                 type="text"
-                placeholder="Your name..."
+                placeholder="Subject..."
                 required
-                name="name"
+                name="subject"
               />
             </div>
-            <div>
-              <label>Email *</label>
-              <input
-                type="email"
-                placeholder="Your email..."
-                required
-                name="email"
-              />
+            <div style={{ marginTop: "2rem" }}>
+              <label>Message *</label>
+              <textarea required placeholder="Message..." name="message" />
             </div>
-          </NameEmail>
-          <div>
-            <label>Subject *</label>
-            <input
-              type="text"
-              placeholder="Subject..."
-              required
-              name="subject"
-            />
-          </div>
-          <div style={{ marginTop: "2rem" }}>
-            <label>Message *</label>
-            <textarea required placeholder="Message..." name="message" />
-          </div>
-          <SubmitWrapper>
-            <SubmitButton type="submit">
-              Send Message
-              <AiOutlineSend size={18} />
-            </SubmitButton>
-            <ResultWrapper error={error} showResult={showResult}>
-              {error
-                ? "Your message could not be sent, Kindly contact directly over Email or Phone!"
-                : "Your message has been sent successfully, I will contact you soon!"}
-            </ResultWrapper>
-          </SubmitWrapper>
-        </form>
+            <SubmitWrapper>
+              <SubmitButton type="submit">
+                Send Message
+                <AiOutlineSend size={18} />
+              </SubmitButton>
+              <ResultWrapper error={error} showResult={showResult}>
+                {error
+                  ? "Your message could not be sent, Kindly contact directly over Email or Phone!"
+                  : "Your message has been sent successfully, I will contact you soon!"}
+              </ResultWrapper>
+            </SubmitWrapper>
+          </form>
+        </ContactForm>
       </ContactContainer>
     </div>
   );
