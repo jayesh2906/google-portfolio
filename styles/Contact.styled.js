@@ -58,8 +58,8 @@ export const ContactContainer = styled.main`
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px
-      ${({ theme }) => theme.colors.contentBackground} inset !important;
+    -webkit-box-shadow: 0 0 0 30px ${({ theme }) => theme.colors.background}
+      inset !important;
   }
 
   input:-webkit-autofill {
