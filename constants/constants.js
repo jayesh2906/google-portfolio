@@ -182,7 +182,7 @@ export const relatedsearch = [
 
 export const footerData = {
   name: "JayeshChoudhary",
-  year: "2022",
+  year: new Date().getFullYear(),
   darkTheme: "Dark theme: ",
   socialLinks: [
     {

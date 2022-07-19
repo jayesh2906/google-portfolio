@@ -1,14 +1,18 @@
 import TitleDesc from "../components/TitleDesc";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   ContactContainer,
   NameEmail,
+  ResultWrapper,
   SubmitButton,
+  SubmitWrapper,
 } from "../styles/Contact.styled";
 import { AiOutlineSend } from "react-icons/ai";
 
 const Contact = () => {
+  const [showResult, SetShowResult] = useState(false);
+  const [error, SetError] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -16,20 +20,28 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_tuxva2l",
-        "template_xos6rpj",
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        "KpFpu5QHkapktwXMv"
+        process.env.NEXT_PUBLIC_KEY
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
+          SetShowResult(true);
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
+          SetError(true);
+          SetShowResult(true);
         }
       );
+    e.target.reset();
   };
+
+  setTimeout(() => {
+    SetShowResult(false);
+  }, 6000);
 
   return (
     <div>
@@ -69,10 +81,17 @@ const Contact = () => {
             <label>Message *</label>
             <textarea required placeholder="Message..." name="message" />
           </div>
-          <SubmitButton type="submit">
-            Send Mail
-            <AiOutlineSend size={18} />
-          </SubmitButton>
+          <SubmitWrapper>
+            <SubmitButton type="submit">
+              Send Message
+              <AiOutlineSend size={18} />
+            </SubmitButton>
+            <ResultWrapper error={error} showResult={showResult}>
+              {error
+                ? "Your message could not be sent, Kindly contact directly over Email or Phone!"
+                : "Your message has been sent successfully, I will contact you soon!"}
+            </ResultWrapper>
+          </SubmitWrapper>
         </form>
       </ContactContainer>
     </div>

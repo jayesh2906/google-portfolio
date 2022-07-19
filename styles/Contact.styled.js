@@ -40,11 +40,24 @@ export const ContactContainer = styled.main`
     ::placeholder {
       color: ${({ theme }) => theme.colors.primary};
     }
+    caret-color: ${({ theme }) => theme.colors.primary};
   }
 
   textarea {
     height: 10rem;
     resize: none;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px
+      ${({ theme }) => theme.colors.contentBackground} inset !important;
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: ${({ theme }) => theme.colors.primary} !important;
   }
 `;
 
@@ -67,9 +80,9 @@ export const NameEmail = styled.section`
 
 export const SubmitButton = styled.button`
   background-color: ${({ theme }) => theme.colors.contentHover};
-  margin-top: 2.5rem;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   font-size: 1.6rem;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -81,5 +94,28 @@ export const SubmitButton = styled.button`
   &:hover {
     border: 2px solid ${({ theme }) => theme.colors.contentHover};
     background-color: ${({ theme }) => theme.colors.contentBackground};
+  }
+`;
+
+export const ResultWrapper = styled.p`
+  padding: 1rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  color: ${({ error }) => (error ? "#88452F" : "#155724")};
+  background-color: ${({ error }) => (error ? "#F8D7DA" : "#d4edda")};
+  border: 1px solid ${({ error }) => (error ? "#F5C6CB" : "#c3e6cb")};
+  visibility: ${({ showResult }) => (showResult ? "visible" : "hidden")};
+`;
+
+export const SubmitWrapper = styled.section`
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2.5rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 `;
