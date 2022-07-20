@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../pages/_app";
 import { FiSun } from "react-icons/fi";
 import { BsMoonStars } from "react-icons/bs";
@@ -15,10 +15,16 @@ import {
 } from "./Header.styled";
 import { accountDetails } from "../../constants/constants";
 
-const TopSearch = ({}) => {
+const TopSearch = ({ handleSearch, searchedValue }) => {
   const { darkMode, handleThemeMode } = useContext(ThemeContext);
   const [search, setSearch] = useState("Jayesh Choudhary");
   const [showDetails, setShowDetails] = useState(false);
+
+  useEffect(() => {
+    if (searchedValue) {
+      setSearch(searchedValue);
+    }
+  }, [searchedValue]);
 
   const CloseIcon = () => {
     return (
@@ -40,7 +46,12 @@ const TopSearch = ({}) => {
 
   const SearchIcon = () => {
     return (
-      <span style={{ cursor: "pointer" }}>
+      <span
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          handleSearch(search);
+        }}
+      >
         <svg
           focusable="false"
           xmlns="http://www.w3.org/2000/svg"

@@ -8,6 +8,7 @@ import {
   ContactItem,
   NameEmail,
   ResultWrapper,
+  Spinner,
   SubmitButton,
   SubmitWrapper,
 } from "../styles/Contact.styled";
@@ -19,10 +20,12 @@ const Contact = () => {
   const { darkMode } = useContext(ThemeContext);
   const [showResult, SetShowResult] = useState(false);
   const [error, SetError] = useState(false);
+  const [isLoading, SetIsLoading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    SetIsLoading(true);
 
     emailjs
       .sendForm(
@@ -35,11 +38,13 @@ const Contact = () => {
         (result) => {
           console.log(result);
           SetShowResult(true);
+          SetIsLoading(false);
         },
         (error) => {
           console.log(error);
           SetError(true);
           SetShowResult(true);
+          SetIsLoading(false);
         }
       );
     e.target.reset();
@@ -70,7 +75,7 @@ const Contact = () => {
             );
           })}
         </ContactDetails>
-        <ContactForm>
+        <ContactForm darkMode={darkMode}>
           <form ref={form} onSubmit={sendEmail}>
             <NameEmail>
               <div>
@@ -110,6 +115,7 @@ const Contact = () => {
                 Send Message
                 <AiOutlineSend size={18} />
               </SubmitButton>
+              {isLoading && <Spinner></Spinner>}
               <ResultWrapper error={error} showResult={showResult}>
                 {error
                   ? "Your message could not be sent, Kindly contact directly over Email or Phone!"

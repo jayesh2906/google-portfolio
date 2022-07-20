@@ -25,7 +25,7 @@ export const accountDetails = {
 
 export const navBar = [
   {
-    name: "All",
+    name: "About",
     path: "/",
     icon: AiOutlineSearch,
   },

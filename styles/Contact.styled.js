@@ -120,9 +120,7 @@ export const SubmitWrapper = styled.section`
   align-items: center;
   margin-top: 2.5rem;
   @media ${(props) => props.theme.breakpoints.sm} {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 `;
 
@@ -169,6 +167,24 @@ export const ContactItem = styled.section`
     color: ${({ theme }) => theme.colors.secondary};
     &:hover {
       text-decoration: underline;
+    }
+  }
+`;
+
+export const Spinner = styled.section`
+  border: 0.6rem solid ${({ theme }) => theme.colors.contentHover};
+  border-top: 0.6rem solid ${({ theme }) => theme.colors.primary};
+  border-radius: 50%;
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
     }
   }
 `;

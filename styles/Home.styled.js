@@ -149,3 +149,38 @@ export const ResumeWrapper = styled.a`
     width: 64%;
   }
 `;
+
+export const NotFoundContainer = styled.main`
+  margin-top: 5rem;
+  padding-left: calc(92px + 5rem);
+  padding-right: calc(92px + 5rem + 2rem);
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    & > p {
+      text-align: center;
+      font-weight: 600;
+      line-height: 2rem;
+      padding: 0, 0.5rem;
+      padding-top: 0.5rem;
+
+      a {
+        color: ${({ theme }) => theme.colors.secondary};
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding: 0 calc(92px);
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 0px;
+  }
+`;
