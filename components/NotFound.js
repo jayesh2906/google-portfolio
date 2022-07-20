@@ -15,7 +15,7 @@ const NotFound = ({ setSearchValue }) => {
           }}
         />
         <p>
-          Please search as "Jayesh Choudhary" or{" "}
+          {`Please search as "Jayesh Choudhary" or `}
           <a
             onClick={() => {
               setSearchValue("Jayesh Choudhary");
