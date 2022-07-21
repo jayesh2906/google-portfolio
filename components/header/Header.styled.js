@@ -49,6 +49,14 @@ export const SearchBox = styled.div`
     box-shadow: 0 2px 8px 1px rgba(64, 60, 67, 0.24);
   }
   background-color: ${({ darkMode }) => (darkMode ? "#303134" : "#FFFFFF")};
+
+  svg {
+    &:hover {
+      path {
+        fill: ${({ theme }) => theme.colors.secondary};
+      }
+    }
+  }
 `;
 
 export const SearchInput = styled.input`
