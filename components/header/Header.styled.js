@@ -100,6 +100,9 @@ export const Profile = styled.div`
   font-weight: 600;
   margin-top: -3px;
   cursor: pointer;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0.7rem 1.2rem;
+  }
 `;
 
 export const AccountDetails = styled.div`
