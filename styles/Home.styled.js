@@ -165,7 +165,7 @@ export const NotFoundContainer = styled.main`
     & > p {
       text-align: center;
       font-weight: 600;
-      line-height: 2rem;
+      line-height: 2.3rem;
       padding: 0, 0.5rem;
       padding-top: 0.5rem;
 
@@ -174,6 +174,9 @@ export const NotFoundContainer = styled.main`
         cursor: pointer;
         &:hover {
           text-decoration: underline;
+        }
+        @media ${(props) => props.theme.breakpoints.sm} {
+          display: block;
         }
       }
     }
