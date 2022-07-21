@@ -40,7 +40,7 @@ export const ContactContainer = styled.main`
 
     &:focus {
       outline: none;
-      border: 2px solid ${({ theme }) => theme.colors.contentHover};
+      border: 2px solid #979a9a;
     }
 
     ::placeholder {
