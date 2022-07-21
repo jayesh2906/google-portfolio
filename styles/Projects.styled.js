@@ -64,6 +64,7 @@ export const ProjectItem = styled.div`
     & > li {
       list-style-type: square;
       line-height: 1.9rem;
+      margin-top: 0.3rem;
 
       &::marker {
         color: ${({ theme }) => theme.colors.secondary};

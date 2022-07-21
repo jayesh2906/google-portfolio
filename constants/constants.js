@@ -69,7 +69,7 @@ export const info = {
     {
       title: "Informa DNA (01/07/2021 - 31/01/2022) :",
       description:
-        "Worked with mentioned technologies : React Js, Redux-saga, Redux-toolkit, SASS, Material Ui, axios, ag-grid-react, formik and yup. Mainly worked on the Logical part of frontend like API integration, Implementation of new features, Reusable components, Bug fixes using React Js, JavaScript and SASS.",
+        "Worked with mentioned technologies : React Js, Redux-saga, Redux-toolkit, Sass, Material Ui, axios, ag-grid-react, formik and yup. Mainly worked on the Logical part of frontend like API integration, Implementation of new features, Reusable components, Bug fixes using React Js, JavaScript and Sass.",
     },
   ],
 };
@@ -90,16 +90,6 @@ export const sideBarInfo = {
       icon: BsFillPhoneFill,
     },
     {
-      title: "Google Portfolio link",
-      href: "https://google-portfolio.vercel.app/",
-      icon: AiFillGoogleCircle,
-    },
-    {
-      title: "Portfolio link",
-      href: "https://jayesh2906.github.io",
-      icon: BiLinkAlt,
-    },
-    {
       title: "Linkedin Profile",
       href: "https://www.linkedin.com/in/jayesh-choudhary-72444518b/",
       icon: FaLinkedin,
@@ -108,6 +98,16 @@ export const sideBarInfo = {
       title: "Github Profile",
       href: "https://github.com/jayesh2906",
       icon: AiFillGithub,
+    },
+    {
+      title: "Portfolio link",
+      href: "https://jayesh2906.github.io",
+      icon: BiLinkAlt,
+    },
+    {
+      title: "Google Portfolio link",
+      href: "https://google-portfolio.vercel.app/",
+      icon: AiFillGoogleCircle,
     },
     {
       title: "Twitter Profile",
@@ -124,7 +124,7 @@ export const accordionData = [
   },
   {
     question: "What services does Jayesh provide?",
-    answer: `Jayesh provides fully responsive frontend application with React Js, Full-stack aplication with MERN and Backend services with Node Js.`,
+    answer: `Jayesh provides fully responsive frontend applications with React Js, Full-stack aplications with MERN and Backend services with Node Js.`,
   },
   {
     question: "Is Jayesh frontend or backend developer?",
@@ -364,7 +364,7 @@ export const projectsData = [
     description: [
       "Implemented a WebApp that provides the live scorecard of IPL-2022 fetched from RESTful cricket API.",
       "User can create his/her playing 11 team for each franchise, User can also watch the best of IPL highlights.",
-      "onverted to PWA that can be installed and run on mobile as a native app.",
+      "Converted to PWA that can be installed and run on mobile as a native app.",
       "Deployed it to Netlify.",
       "Technologies used: JavaScript, React, CSS 3, Material Ui, Local Storage.",
     ],
@@ -377,7 +377,7 @@ export const projectsData = [
     title: "Full E-Commerce Web Application",
     image: "/assets/iconstore.png",
     description: [
-      "Implemented a Full E-Commerce WebApp with MERN Stack which can be used by users, sellers, and Admin.",
+      "Implemented a Full E-Commerce WebApp with MERN Stack that can be used by users, sellers, and Admin.",
       "Uses json web token for security, Authorization.",
       "Uses Geo-location for auto-filling shipping address of user.",
       "Uses Twilio message notification to registered mobile number on confirmation of orders.",
@@ -393,7 +393,7 @@ export const projectsData = [
     title: "Ice Mart Mobile Application",
     image: "/assets/icemart.png",
     description: [
-      "Implemented an Ice Mart Mobile App with MERNN Stack which can be used by users, and Admin.",
+      "Implemented an Ice Mart Mobile App with MERNN Stack that can be used by users, and Admin.",
       "Uses json web token for security, Authorization.",
       "Uses Google-maps for location of user.",
       "Uses Google pay payment gateway integration for demo virtual payment of orders.",
@@ -460,3 +460,15 @@ export const contactDetails = [
     href: "https://www.linkedin.com/in/jayesh-choudhary-72444518b/",
   },
 ];
+
+export const contactData = {
+  nameLabel: "Name *",
+  emailLabel: "Email *",
+  subjectLabel: "Subject *",
+  messageLabel: "Message *",
+  sendButton: "Send Message",
+  errorMessage:
+    "Your message could not be sent, Kindly contact directly over Email or Phone!",
+  successMessage:
+    "Your message has been sent successfully, I will contact you soon!",
+};

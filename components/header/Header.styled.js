@@ -118,7 +118,6 @@ export const AccountDetails = styled.div`
   }
 `;
 
-// Nav Bar Styling
 export const NavBarContainer = styled.div`
   padding-top: 70px;
   padding-left: calc(92px + 5rem + 2rem);
@@ -145,6 +144,7 @@ export const NavBarUl = styled.ul`
   ::-webkit-scrollbar {
     display: none;
   }
+  scrollbar-width: none;
 `;
 
 export const LinkWrapper = styled.div`

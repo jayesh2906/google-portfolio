@@ -13,7 +13,7 @@ import {
   SubmitWrapper,
 } from "../styles/Contact.styled";
 import { AiOutlineSend } from "react-icons/ai";
-import { contactDetails } from "../constants/constants";
+import { contactData, contactDetails } from "../constants/constants";
 import { ThemeContext } from "./_app";
 
 const Contact = () => {
@@ -79,7 +79,7 @@ const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <NameEmail>
               <div>
-                <label>Name *</label>
+                <label>{contactData.nameLabel}</label>
                 <input
                   type="text"
                   placeholder="Your name..."
@@ -88,7 +88,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label>Email *</label>
+                <label>{contactData.emailLabel}</label>
                 <input
                   type="email"
                   placeholder="Your email..."
@@ -98,7 +98,7 @@ const Contact = () => {
               </div>
             </NameEmail>
             <div>
-              <label>Subject *</label>
+              <label>{contactData.subjectLabel}</label>
               <input
                 type="text"
                 placeholder="Subject..."
@@ -107,19 +107,17 @@ const Contact = () => {
               />
             </div>
             <div style={{ marginTop: "2rem" }}>
-              <label>Message *</label>
+              <label>{contactData.messageLabel}</label>
               <textarea required placeholder="Message..." name="message" />
             </div>
             <SubmitWrapper>
               <SubmitButton type="submit">
-                Send Message
+                {contactData.sendButton}
                 <AiOutlineSend size={18} />
               </SubmitButton>
               {isLoading && <Spinner></Spinner>}
               <ResultWrapper error={error} showResult={showResult}>
-                {error
-                  ? "Your message could not be sent, Kindly contact directly over Email or Phone!"
-                  : "Your message has been sent successfully, I will contact you soon!"}
+                {error ? contactData.errorMessage : contactData.successMessage}
               </ResultWrapper>
             </SubmitWrapper>
           </form>
