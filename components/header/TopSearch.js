@@ -14,17 +14,19 @@ import {
   AccountDetails,
 } from "./Header.styled";
 import { accountDetails } from "../../constants/constants";
+import { SearchContext } from "../../layout/Layout";
 
-const TopSearch = ({ handleSearch, searchedValue }) => {
+const TopSearch = () => {
   const { darkMode, handleThemeMode } = useContext(ThemeContext);
   const [search, setSearch] = useState("Jayesh Choudhary");
   const [showDetails, setShowDetails] = useState(false);
+  const { searchValueChange, handleSearch } = useContext(SearchContext);
 
   useEffect(() => {
-    if (searchedValue) {
-      setSearch(searchedValue);
+    if (searchValueChange) {
+      setSearch("Jayesh Choudhary");
     }
-  }, [searchedValue]);
+  }, [searchValueChange]);
 
   const CloseIcon = () => {
     return (

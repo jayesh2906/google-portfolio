@@ -2,10 +2,10 @@ import NavBar from "./NavBar";
 import TopSearch from "./TopSearch";
 import { HeaderContainer } from "./Header.styled";
 
-const Header = ({ handleSearch, searchedValue }) => {
+const Header = () => {
   return (
     <HeaderContainer>
-      <TopSearch handleSearch={handleSearch} searchedValue={searchedValue} />
+      <TopSearch />
       <NavBar />
     </HeaderContainer>
   );
