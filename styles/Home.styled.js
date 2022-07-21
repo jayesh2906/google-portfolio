@@ -33,6 +33,7 @@ export const Heading = styled.h2`
   margin-bottom: 5px;
   color: ${({ theme }) => theme.colors.secondary};
   display: block;
+  width: fit-content;
   color: ${({ theme }) => theme.colors.secondary};
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
@@ -43,6 +44,7 @@ export const Heading = styled.h2`
 `;
 
 export const MobileHeading = styled(Heading)`
+  width: fit-content;
   display: none;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: block;

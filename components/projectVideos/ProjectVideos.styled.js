@@ -96,6 +96,7 @@ export const Title = styled.h2`
   font-size: 1.6rem;
   font-weight: 400;
   cursor: pointer;
+  width: fit-content;
   color: ${({ theme }) => theme.colors.secondary};
   @media ${(props) => props.theme.breakpoints.sm} {
   }
