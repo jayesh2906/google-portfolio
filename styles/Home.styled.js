@@ -151,9 +151,10 @@ export const ResumeWrapper = styled.a`
 `;
 
 export const NotFoundContainer = styled.main`
-  margin-top: 5rem;
+  margin-top: 10rem;
   padding-left: calc(92px + 5rem);
   padding-right: calc(92px + 5rem + 2rem);
+  place-items: center;
   div {
     display: flex;
     flex-direction: column;
