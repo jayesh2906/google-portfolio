@@ -350,7 +350,7 @@ export const projectsData = [
     title: "House Design with CSS",
     image: "/assets/housedesign.png",
     description: [
-      "Designed front-view of my house with pure CSS 3, Html 5 and JavaScript(for handlingevents).",
+      "Designed front-view of my house with pure CSS 3, Html 5 and JavaScript(for handling events).",
       "User can open and close Gate, Windows and Slide of a House, User can also rotate a house in 360°.",
     ],
     videoDemo:
