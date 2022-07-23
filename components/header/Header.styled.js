@@ -39,7 +39,8 @@ export const SearchBox = styled.div`
   flex-basis: 50%;
   padding: 0.8rem 1.2rem;
   border: 1px solid transparent;
-  box-shadow: 0 2px 5px 1px
+  box-shadow: 0 ${({ darkMode }) => (darkMode ? "1px" : "2px")} 5px
+    ${({ darkMode }) => (darkMode ? "0px" : "1px")}
     ${({ darkMode }) =>
       darkMode ? "rgb(180 200 210 / 35%);" : "rgb(64 60 67 / 16%)"};
 
@@ -49,9 +50,10 @@ export const SearchBox = styled.div`
     flex-basis: 100%;
   }
   &:hover {
-    box-shadow: 0 2px 8px 1px
+    box-shadow: 0 ${({ darkMode }) => (darkMode ? "1px" : "2px")}
+      ${({ darkMode }) => (darkMode ? "7px" : "8px")} 1px
       ${({ darkMode }) =>
-        darkMode ? "rgb(250 240 250 / 35%);" : " rgba(64, 60, 67, 0.24)"};
+        darkMode ? "rgb(180 180 180 / 35%);" : " rgba(64, 60, 67, 0.24)"};
   }
   background-color: ${({ darkMode }) => (darkMode ? "#303134" : "#FFFFFF")};
 
