@@ -125,7 +125,11 @@ export const SubmitWrapper = styled.section`
 `;
 
 export const ContactForm = styled.section`
-  filter: drop-shadow(0 ${({ darkMode }) => (darkMode ? "2px" : "4px")} 3px)
+  filter: drop-shadow(
+      0 ${({ darkMode }) => (darkMode ? "1px" : "4px")}
+        ${({ darkMode }) => (darkMode ? "2px" : "3px")}
+        ${({ theme }) => theme.colors.primary}
+    )
     drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   transition: 500ms all;
   padding: 1.5rem;
@@ -148,7 +152,10 @@ export const ContactDetails = styled.section`
 `;
 
 export const ContactItem = styled.section`
-  filter: drop-shadow(0 ${({ darkMode }) => (darkMode ? "1px" : "3px")} 3px)
+  filter: drop-shadow(
+      0 ${({ darkMode }) => (darkMode ? "1px" : "3px")}
+        ${({ darkMode }) => (darkMode ? "2px" : "3px")}
+    )
     drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   transition: 500ms all;
   padding: 1rem 0;
