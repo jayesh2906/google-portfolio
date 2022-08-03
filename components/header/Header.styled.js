@@ -160,8 +160,9 @@ export const LinkWrapper = styled.div`
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
-
-  &:hover {
-    color: ${({ darkMode }) => (darkMode ? "#79B4F8" : "#1A0DAB")};
+  @media (hover: hover) {
+    &:hover {
+      color: ${({ darkMode }) => (darkMode ? "#79B4F8" : "#1A0DAB")};
+    }
   }
 `;
