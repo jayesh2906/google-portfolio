@@ -224,6 +224,7 @@ export const skillsData = {
         "Node Js, Express Js, Mongo Db, Next Js, Postman and Jwt-Authentication.",
     },
   ],
+
   skillsIcons: [
     {
       title: "React Js",
@@ -422,13 +423,23 @@ export const projectsData = [
     title: "Movie Info Application",
     image: "/assets/movieapp.png",
     description: [
-      "Implemented a Movie info app with MERN Stack with third-party APIs for fetching movies record.",
-      "Uses OMDb RESTful web service.",
-      "Technologies used: JavaScript, React, Node Js, Expess Js, Html, CSS, Bootstrap 5.",
-      "Database used: MongoDB.",
+      "Implemented a Movie info app with MERN Stack with third-party APIs for fetching movies record, Uses OMDb RESTful web service.",
+      "Technologies used: JavaScript, React, Node Js, Expess Js, Html, CSS, Bootstrap 5, MongoDB.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6842939354764201984/",
+    liveDemo: "",
+    sourceCode: "",
+  },
+  {
+    title: "All Projects Compilation",
+    image: "/assets/allProjects.png",
+    description: [
+      "Check here my all Projects in Video Compilation.",
+      "Technologies used: JavaScript, React Js, Redux, React Native, Next Js, Html5, CSS3,Tailwind Css, Material Ui, Bootstrap5, Sass, Styled Component, Node Js, Express Js, Mongo Db, Postman and Jwt-Authentication.",
+    ],
+    videoDemo:
+      "https://www.linkedin.com/feed/update/urn:li:activity:6962305778502254592/",
     liveDemo: "",
     sourceCode: "",
   },
