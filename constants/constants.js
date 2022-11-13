@@ -382,7 +382,7 @@ export const projectsData = [
       "Uses json web token for security ( Authorization ), Uses Geo-location for auto-filling shipping address of user.",
       "Uses Twilio message notification to registered mobile number on confirmation of orders.",
       "Uses Paypal payment gateway integration for demo virtual payment of orders.",
-      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Redux Thunk</b>, <b>Node Js</b>, <b>Expess Js</b>, <b>Html</b>, <b>CSS</b>, <b>Bootstrap 5</b>, <b>MongoDB</b>.",
+      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Redux Thunk</b>, <b>Node Js</b>, <b>Express Js</b>, <b>Html</b>, <b>CSS</b>, <b>Bootstrap 5</b>, <b>MongoDB</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6842941644195672064/",
@@ -397,7 +397,7 @@ export const projectsData = [
       "Uses json web token for security, Authorization.",
       "Uses Google-maps for location of user.",
       "Uses Google pay payment gateway integration for demo virtual payment of orders.",
-      "Technologies used: <b>JavaScript</b>, <b>React Native</b>, <b>Redux Toolkit</b>, <b>Node Js</b>, <b>Expess Js</b>, <b>MongoDB</b>.",
+      "Technologies used: <b>JavaScript</b>, <b>React Native</b>, <b>Redux Toolkit</b>, <b>Node Js</b>, <b>Express Js</b>, <b>MongoDB</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6941967333682737152/",
@@ -411,7 +411,7 @@ export const projectsData = [
       "Designed and developed a Real-time Online Chat Application with react and stream that can be used for online communication.",
       "Server deployed to Heroku and Client deployed to Netlify.",
       "Responsive and converted into PWA(Native app).",
-      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Stream</b>, <b>Node Js</b>, <b>Expess Js</b>, <b>Html</b>, <b>CSS</b>.",
+      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Stream</b>, <b>Node Js</b>, <b>Express Js</b>, <b>Html</b>, <b>CSS</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6877141876273762304/",
@@ -423,7 +423,7 @@ export const projectsData = [
     image: "/assets/movieapp.png",
     description: [
       "Designed and developed a Movie info app with MERN Stack with third-party APIs for fetching movies record, Uses <b>OMDb RESTful</b> web service.",
-      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Node Js</b>, <b>Expess Js</b>, <b>Html</b>, <b>CSS</b>, <b>Bootstrap 5</b>, <b>MongoDB</b>.",
+      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Node Js</b>, <b>Express Js</b>, <b>Html</b>, <b>CSS</b>, <b>Bootstrap 5</b>, <b>MongoDB</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6842939354764201984/",
