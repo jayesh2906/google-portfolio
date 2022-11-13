@@ -63,7 +63,10 @@ const Home = () => {
               {info.workProjects.map(({ title, description }) => {
                 return (
                   <li key={title}>
-                    <strong>{title}</strong> {description}
+                    <strong>{title}</strong>{" "}
+                    <span
+                      dangerouslySetInnerHTML={{ __html: description }}
+                    ></span>
                   </li>
                 );
               })}

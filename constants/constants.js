@@ -64,12 +64,12 @@ export const info = {
     {
       title: "DHRE RealConnect (01/02/2022 - Present) :",
       description:
-        "Currently, Working on a live project from scratch as a React Js Frontend developer.",
+        "Currently, Developing a web application for Dubai Holding Real Estate from scratch as a frontend developer, Technologies used : <b>React Js</b>, <b>Redux-thunk</b>, <b>Tailwind CSS</b>, <b>Axios</b>, <b>React-hook-form</b> and <b>Yup</b>.",
     },
     {
-      title: "Informa DNA (01/07/2021 - 31/01/2022) :",
+      title: "Informa Pharma Intelligence (01/07/2021 - 31/01/2022) :",
       description:
-        "Worked with mentioned technologies : React Js, Redux-saga, Redux-toolkit, Sass, Material Ui, axios, ag-grid-react, formik and yup. Mainly worked on the Logical part of frontend like API integration, Implementation of new features, Reusable components, Bug fixes using React Js, JavaScript and Sass.",
+        "Responsible for the logical part of frontend development such as API integration, Implementation of new features, Reusable components, and Bug fixes. Worked with mentioned technologies : <b>React Js</b>, <b>Redux-saga</b>, <b>Redux-toolkit</b>, <b>Sass</b>, <b>Material Ui</b>, <b>Axios</b>, <b>Ag-grid-react</b>, <b>Formik</b> and <b>Yup</b>.",
     },
   ],
 };
@@ -221,7 +221,7 @@ export const skillsData = {
     {
       title: "Backend Skills",
       description:
-        "Node Js, Express Js, Mongo Db, Next Js, Postman and Jwt-Authentication.",
+        "Node Js, Express Js, Mongo Db, Next Js, Postman and Jwt-Authorization.",
     },
   ],
 
@@ -340,7 +340,7 @@ export const projectsData = [
     title: "Laptop with React Js and Tailwind CSS",
     image: "/assets/laptopdesign.png",
     description: [
-      "Implemented a laptop with Power on, Sign In with password or finger scanner, Restart, Sleep and Shut down functionality using React and Tailwind CSS.",
+      "Designed and developed a laptop with Power on, Sign In with password or finger scanner, Restart, Sleep and Shut down functionality using <b>React JS</b> and <b>Tailwind CSS</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:ugcPost:6904281486057373696/",
@@ -351,7 +351,7 @@ export const projectsData = [
     title: "House Design with CSS",
     image: "/assets/housedesign.png",
     description: [
-      "Designed front-view of my house with pure CSS 3, Html 5 and JavaScript(for handling events).",
+      "Designed and developed front-view of my house with pure <b>CSS 3</b>, <b>Html 5</b> and <b>JavaScript</b>.",
       "User can open and close Gate, Windows and Slide of a House, User can also rotate a house in 360°.",
     ],
     videoDemo:
@@ -363,11 +363,11 @@ export const projectsData = [
     title: "IPL-2022 Web Application",
     image: "/assets/ipl2022.png",
     description: [
-      "Implemented a WebApp that provides the live scorecard of IPL-2022 fetched from RESTful cricket API.",
+      "Designed and developed a web application that provides the live scorecard of IPL-2022 fetched from <b>RESTful Cricket API</b>.",
       "User can create his/her playing 11 team for each franchise, User can also watch the best of IPL highlights.",
       "Converted to PWA that can be installed and run on mobile as a native app.",
       "Deployed it to Netlify.",
-      "Technologies used: JavaScript, React, CSS 3, Material Ui, Local Storage.",
+      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>CSS 3</b>, <b>Material Ui</b>, <b>Local Storage</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6913334580070498304/",
@@ -378,12 +378,11 @@ export const projectsData = [
     title: "Full E-Commerce Web Application",
     image: "/assets/iconstore.png",
     description: [
-      "Implemented a Full E-Commerce WebApp with MERN Stack that can be used by users, sellers, and Admin.",
-      "Uses json web token for security, Authorization.",
-      "Uses Geo-location for auto-filling shipping address of user.",
+      "Desinged and developed a Full E-Commerce web application with MERN Stack that can be used by users, sellers, and Admin.",
+      "Uses json web token for security ( Authorization ), Uses Geo-location for auto-filling shipping address of user.",
       "Uses Twilio message notification to registered mobile number on confirmation of orders.",
       "Uses Paypal payment gateway integration for demo virtual payment of orders.",
-      "Technologies used: JavaScript, React, Redux Thunk, Node Js, Expess Js, Html, CSS, Bootstrap 5, MongoDB.",
+      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Redux Thunk</b>, <b>Node Js</b>, <b>Expess Js</b>, <b>Html</b>, <b>CSS</b>, <b>Bootstrap 5</b>, <b>MongoDB</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6842941644195672064/",
@@ -394,11 +393,11 @@ export const projectsData = [
     title: "Ice Mart Mobile Application",
     image: "/assets/icemart.png",
     description: [
-      "Implemented an Ice Mart Mobile App with MERNN Stack that can be used by users, and Admin.",
+      "Designed and developed an Ice Mart Mobile App with MERNN Stack that can be used by users, and Admin.",
       "Uses json web token for security, Authorization.",
       "Uses Google-maps for location of user.",
       "Uses Google pay payment gateway integration for demo virtual payment of orders.",
-      "Technologies used: JavaScript, React Native, Redux Toolkit, Node Js, Expess Js, MongoDB.",
+      "Technologies used: <b>JavaScript</b>, <b>React Native</b>, <b>Redux Toolkit</b>, <b>Node Js</b>, <b>Expess Js</b>, <b>MongoDB</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6941967333682737152/",
@@ -409,10 +408,10 @@ export const projectsData = [
     title: "Real-time Online Chat Application",
     image: "/assets/chatapp.png",
     description: [
-      "Implemented a Real-time Online Chat Application with react and stream that can be used for online communication.",
+      "Designed and developed a Real-time Online Chat Application with react and stream that can be used for online communication.",
       "Server deployed to Heroku and Client deployed to Netlify.",
       "Responsive and converted into PWA(Native app).",
-      "Technologies used: JavaScript, React, Stream, Node Js, Expess Js, Html, CSS.",
+      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Stream</b>, <b>Node Js</b>, <b>Expess Js</b>, <b>Html</b>, <b>CSS</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6877141876273762304/",
@@ -423,8 +422,8 @@ export const projectsData = [
     title: "Movie Info Application",
     image: "/assets/movieapp.png",
     description: [
-      "Implemented a Movie info app with MERN Stack with third-party APIs for fetching movies record, Uses OMDb RESTful web service.",
-      "Technologies used: JavaScript, React, Node Js, Expess Js, Html, CSS, Bootstrap 5, MongoDB.",
+      "Designed and developed a Movie info app with MERN Stack with third-party APIs for fetching movies record, Uses <b>OMDb RESTful</b> web service.",
+      "Technologies used: <b>JavaScript</b>, <b>React JS</b>, <b>Node Js</b>, <b>Expess Js</b>, <b>Html</b>, <b>CSS</b>, <b>Bootstrap 5</b>, <b>MongoDB</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6842939354764201984/",
@@ -435,8 +434,8 @@ export const projectsData = [
     title: "All Projects Compilation",
     image: "/assets/allProjects.png",
     description: [
-      "Check here my all Projects in Video Compilation.",
-      "Technologies used: JavaScript, React Js, Redux, React Native, Next Js, Html5, CSS3,Tailwind Css, Material Ui, Bootstrap5, Sass, Styled Component, Node Js, Express Js, Mongo Db, Postman and Jwt-Authentication.",
+      "Check here my all projects in one video compilation.",
+      "Technologies used: <b>JavaScript</b>, <b>React Js</b>, <b>Redux</b>, <b>React Native</b>, <b>Next Js</b>, <b>Html5</b>, <b>CSS3</b>, <b>Tailwind Css</b>, <b>Material Ui</b>, <b>Bootstrap5</b>, <b>Sass</b>, <b>Styled Components</b>, <b>Node Js</b>, <b>Express Js</b>, <b>Mongo Db</b>, <b>Postman</b> and <b>Jwt-Authorization</b>.",
     ],
     videoDemo:
       "https://www.linkedin.com/feed/update/urn:li:activity:6962305778502254592/",

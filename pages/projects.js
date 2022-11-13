@@ -53,7 +53,12 @@ const Projects = () => {
                   </ImageContainer>
                   <ul>
                     {description.map((sentence) => {
-                      return <li key={sentence}>{sentence}</li>;
+                      return (
+                        <li
+                          key={sentence}
+                          dangerouslySetInnerHTML={{ __html: sentence }}
+                        ></li>
+                      );
                     })}
                   </ul>
                   <ButtonGroups>
