@@ -378,7 +378,7 @@ export const projectsData = [
     title: "Full E-Commerce Web Application",
     image: "/assets/iconstore.png",
     description: [
-      "Desinged and developed a Full E-Commerce web application with MERN Stack that can be used by users, sellers, and Admin.",
+      "Designed and developed a Full E-Commerce web application with MERN Stack that can be used by users, sellers, and Admin.",
       "Uses json web token for security ( Authorization ), Uses Geo-location for auto-filling shipping address of user.",
       "Uses Twilio message notification to registered mobile number on confirmation of orders.",
       "Uses Paypal payment gateway integration for demo virtual payment of orders.",
