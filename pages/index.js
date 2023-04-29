@@ -54,23 +54,34 @@ const Home = () => {
             <Heading style={{ display: "block" }}>
               {info.workExperience}
             </Heading>
-            <strong>{info.designation}</strong>
-            <Company>
-              <p>{info.company}</p>
-              <i>{info.timePeriod}</i>
-            </Company>
-            <ProjectList>
-              {info.workProjects.map(({ title, description }) => {
-                return (
-                  <li key={title}>
-                    <strong>{title}</strong>{" "}
-                    <span
-                      dangerouslySetInnerHTML={{ __html: description }}
-                    ></span>
-                  </li>
-                );
-              })}
-            </ProjectList>
+            {info.companies.map((company) => {
+              return (
+                <div
+                  key={company.name}
+                  style={{
+                    marginBottom: "15px",
+                  }}
+                >
+                  <strong>{company.designation}</strong>
+                  <Company>
+                    <p>{company.name}</p>
+                    <i>{company.timePeriod}</i>
+                  </Company>
+                  <ProjectList>
+                    {company.workProjects.map(({ title, description }) => {
+                      return (
+                        <li key={title}>
+                          <strong>{title}</strong>{" "}
+                          <span
+                            dangerouslySetInnerHTML={{ __html: description }}
+                          ></span>
+                        </li>
+                      );
+                    })}
+                  </ProjectList>
+                </div>
+              );
+            })}
           </WorkExperience>
           <PeopleAlsoAsk />
           <ProjectVideos />

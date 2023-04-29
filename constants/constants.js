@@ -57,19 +57,36 @@ export const info = {
   description:
     "Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.",
   workExperience: "Work Experience",
-  designation: "Software Engineer",
-  company: "Mindtree Private Limited",
-  timePeriod: "03/2021 - Present",
-  workProjects: [
+
+  companies: [
     {
-      title: "DHRE RealConnect (01/02/2022 - Present) :",
-      description:
-        "Currently, Developing a web application for Dubai Holding Real Estate from scratch as a frontend developer, Technologies used : <b>React Js</b>, <b>Redux-thunk</b>, <b>Tailwind CSS</b>, <b>Axios</b>, <b>React-hook-form</b> and <b>Yup</b>.",
+      designation: "Software Engineer",
+      name: "Microsoft Nuance",
+      timePeriod: "04/2023 - Present",
+      workProjects: [
+        {
+          title: "Voice Application :",
+          description:
+            "Developing Microsoft Nuance voice application product as a <b>Frontend/UI Developer</b>",
+        },
+      ],
     },
     {
-      title: "Informa Pharma Intelligence (01/07/2021 - 31/01/2022) :",
-      description:
-        "Responsible for the logical part of frontend development such as API integration, Implementation of new features, Reusable components, and Bug fixes. Worked with mentioned technologies : <b>React Js</b>, <b>Redux-saga</b>, <b>Redux-toolkit</b>, <b>Sass</b>, <b>Material Ui</b>, <b>Axios</b>, <b>Ag-grid-react</b>, <b>Formik</b> and <b>Yup</b>.",
+      designation: "Software Engineer",
+      name: "Mindtree Private Limited",
+      timePeriod: "03/2021 - 04/2023",
+      workProjects: [
+        {
+          title: "DHRE RealConnect :",
+          description:
+            "Developed a web application for Dubai Holding Real Estate from scratch as a frontend developer, Technologies used : <b>React Js</b>, <b>Redux-thunk</b>, <b>Tailwind CSS</b>, <b>Axios</b>, <b>React-hook-form</b> and <b>Yup</b>.",
+        },
+        {
+          title: "Informa Pharma Intelligence :",
+          description:
+            "Responsible for the logical part of frontend development such as API integration, Implementation of new features, Reusable components, and Bug fixes, Technologies used : <b>React Js</b>, <b>Redux-saga</b>, <b>Redux-toolkit</b>, <b>Sass</b>, <b>Material Ui</b>, <b>Axios</b>, <b>Ag-grid-react</b>, <b>Formik</b> and <b>Yup</b>.",
+        },
+      ],
     },
   ],
 };
