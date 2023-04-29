@@ -57,7 +57,6 @@ export const info = {
   description:
     "Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.",
   workExperience: "Work Experience",
-
   companies: [
     {
       designation: "Software Engineer",
@@ -67,7 +66,7 @@ export const info = {
         {
           title: "Voice Application :",
           description:
-            "Developing Microsoft Nuance voice application product as a <b>Frontend/UI Developer</b>",
+            "Developing Microsoft Nuance voice application product as a <b>Frontend/UI Developer</b>.",
         },
       ],
     },
