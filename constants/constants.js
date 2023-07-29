@@ -60,19 +60,19 @@ export const info = {
   companies: [
     {
       designation: "Software Engineer",
-      name: "Microsoft Nuance",
+      name: "Microsoft",
       timePeriod: "04/2023 - Present",
       workProjects: [
         {
           title: "Voice Application :",
           description:
-            "Developing Microsoft Nuance voice application product as a <b>Frontend/UI Developer</b>.",
+            "Developing Mix Dialog conversational AI chatbots tool as a <b>Frontend/UI Developer</b>.",
         },
       ],
     },
     {
       designation: "Software Engineer",
-      name: "Mindtree Private Limited",
+      name: "LTIMindtree",
       timePeriod: "03/2021 - 04/2023",
       workProjects: [
         {
