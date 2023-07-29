@@ -64,9 +64,9 @@ export const info = {
       timePeriod: "04/2023 - Present",
       workProjects: [
         {
-          title: "Voice Application :",
+          title: "Mix Dialog :",
           description:
-            "Developing Mix Dialog conversational AI chatbots tool as a <b>Frontend/UI Developer</b>.",
+            "Developing conversational AI chatbots tool as a <b>Frontend/UI Developer</b>.",
         },
       ],
     },
