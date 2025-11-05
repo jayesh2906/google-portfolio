@@ -11,7 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "caniuse-lite": "^1.0.30001366",
-    "next": "12.2.2",
+    "next": "^16.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
@@ -21,8 +21,5 @@
     "babel-plugin-styled-components": "^2.0.7",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2"
-  },
-  "engines": {
-    "node": "20.x"
   }
 }
