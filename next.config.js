@@ -1,10 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
   images: {
-    domains: ["cdn.jsdelivr.net"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**", // replace with your actual image domain(s)
+      },
+    ],
   },
+  compiler: {
+    styledComponents: true,
+  },
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;

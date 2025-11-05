@@ -2,9 +2,11 @@ import styled from "styled-components";
 import { Text } from "../styles/Home.styled";
 
 export const ProfileContainer = styled.div`
-  padding-top: 0.5rem;
-  width: 50%;
-  margin: auto;
+  position: relative;
+  width: 210px;
+  height: 220px;
+  margin: 0.5rem auto;
+  overflow: hidden;
 `;
 
 export const ContactDetails = styled.div`

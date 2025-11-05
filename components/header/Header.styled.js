@@ -153,6 +153,7 @@ export const NavBarUl = styled.ul`
 `;
 
 export const LinkWrapper = styled.div`
+  color: ${({ theme }) => theme.colors.primary};
   display: flex;
   gap: 0.6rem;
   align-items: center;

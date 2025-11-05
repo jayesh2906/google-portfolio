@@ -18,11 +18,11 @@ const SideBar = () => {
     <AsideContainer>
       <ProfileContainer>
         <Image
-          style={{ zIndex: "-1" }}
           src="/assets/Profile.png"
           alt="Profile"
-          width={320}
-          height={320}
+          fill
+          style={{ objectFit: "cover" }}
+          priority
         />
       </ProfileContainer>
       <About>{sideBarInfo.about}</About>

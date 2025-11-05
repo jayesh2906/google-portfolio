@@ -75,9 +75,20 @@ export const ProjectItem = styled.div`
 
 export const ImageContainer = styled.div`
   position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 0.8rem;
+  overflow: hidden;
+
   &:hover {
     opacity: 0.8;
     cursor: pointer;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 `;
 

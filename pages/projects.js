@@ -42,10 +42,10 @@ const Projects = () => {
                     }}
                   >
                     <Image
-                      alt="projects"
-                      width={1366}
-                      height={689}
                       src={image}
+                      alt="projects"
+                      fill
+                      style={{ objectFit: "cover" }} // ensures the image fits container
                     />
                     <PlayIcon>
                       <BsFillPlayCircleFill size={40} color="#FDFAF8" />

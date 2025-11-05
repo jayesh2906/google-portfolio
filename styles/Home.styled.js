@@ -85,10 +85,12 @@ export const Company = styled.div`
 
 export const MobileProfile = styled.div`
   width: 100%;
+  max-width: 290px;
+  aspect-ratio: 1 / 1;
   margin: 1rem auto;
-  display: grid;
-  place-items: center;
   display: none;
+  position: relative;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: block;
     display: grid;
@@ -139,16 +141,16 @@ export const ResumeWrapper = styled.a`
   }
   text-decoration: none;
   @media ${(props) => props.theme.breakpoints.xl} {
-    width: 63%;
+    width: 64%;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
-    width: 79%;
+    width: 81%;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 86%;
+    width: 88%;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 64%;
+    width: 69%;
   }
 `;
 

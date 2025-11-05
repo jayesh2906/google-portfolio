@@ -275,7 +275,7 @@ export const skillsData = {
     {
       title: "Tailwind Css",
       href: "https://tailwindcss.com/",
-      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
       shadowColor: "#38bdf8",
     },
     {

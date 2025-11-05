@@ -33,11 +33,11 @@ const Home = () => {
           <Text>{info.description}</Text>
           <MobileProfile>
             <Image
-              style={{ zIndex: "-1" }}
               src="/assets/Profile.png"
               alt="Profile"
-              width={280}
-              height={280}
+              fill
+              style={{ objectFit: "cover" }}
+              priority
             />
           </MobileProfile>
           <span>
