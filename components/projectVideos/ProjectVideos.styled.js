@@ -43,6 +43,7 @@ export const ViewAll = styled.div`
   position: absolute;
   width: 50%;
   padding: 0.3rem 0;
+  color: ${({ theme }) => theme.colors.secondary};
   background: ${({ theme }) => theme.colors.contentBackground};
   border: 1px solid rgba(255, 255, 255, 0);
   cursor: pointer;
