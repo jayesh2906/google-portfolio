@@ -11,9 +11,7 @@ import { BiLinkAlt } from "react-icons/bi";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import { MdCall } from "react-icons/md";
 
@@ -64,9 +62,9 @@ export const info = {
       timePeriod: "04/2023 - Present",
       workProjects: [
         {
-          title: "Mix Dialog :",
+          title: "Healthcare & Life Sciences AI Platform :",
           description:
-            "Developing conversational AI chatbots tool as a <b>Frontend/UI Developer</b>.",
+            "Contributing to the development of Dragon Copilot, an AI-powered solution designed to support nurses by reducing burnout, improving documentation quality, and enhancing the overall patient experience.",
         },
       ],
     },
@@ -124,11 +122,6 @@ export const sideBarInfo = {
       title: "Google Portfolio link",
       href: "https://google-portfolio.vercel.app/",
       icon: AiFillGoogleCircle,
-    },
-    {
-      title: "Twitter Profile",
-      href: "https://twitter.com/JayeshMERN",
-      icon: AiFillTwitterCircle,
     },
   ],
 };
@@ -218,10 +211,6 @@ export const footerData = {
     {
       href: "https://www.instagram.com/insta__jc/",
       icon: FaInstagram,
-    },
-    {
-      href: "https://twitter.com/JayeshMERN",
-      icon: FaTwitterSquare,
     },
   ],
 };
